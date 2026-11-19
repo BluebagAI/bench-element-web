@@ -1,0 +1,31 @@
+{
+ "at": "2026-11-19T21:44:48+00:00",
+ "suite": "element-web",
+ "repo": "BluebagAI/bench-element-web",
+ "runner": "blacksmith-4",
+ "shards": "1",
+ "note": "measured",
+ "run": "https://github.com/BluebagAI/bench-element-web/actions/runs/44618916893",
+ "run_id": 44618916893,
+ "sha": "4ed0d4e3f52c7e41903b38abe4cdc637a2649d7f",
+ "conclusion": "success",
+ "wall_s": 956,
+ "queue_s": 81,
+ "job_s": 2554,
+ "jobs": 5,
+ "job_max_s": 789,
+ "vcpu_min": 170.3,
+ "billed_min": 45,
+ "usd": 0.36,
+ "tests": {
+  "passed": 680,
+  "failed": 0,
+  "flaky": 1,
+  "skipped": 4,
+  "failed_tests": [],
+  "flaky_tests": [
+   "settings/room-settings/room-security-tab.spec.ts::should disallow changing from public to private if the user cannot alter history::Chrome"
+  ],
+  "files": 4
+ }
+}

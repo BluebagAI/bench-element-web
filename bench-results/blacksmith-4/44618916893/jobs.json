@@ -1,0 +1,695 @@
+[
+ {
+  "id": 135894975119,
+  "name": "Build Element Web (blacksmith-4)",
+  "html_url": "https://github.com/BluebagAI/bench-element-web/actions/runs/44618916893/job/135894975119",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T21:27:17Z",
+  "started_at": "2026-11-19T21:28:35Z",
+  "completed_at": "2026-11-19T21:30:18Z",
+  "labels": [
+   "blacksmith-4vcpu-ubuntu-2404"
+  ],
+  "runner_name": "blacksmith-4vcpu-ubuntu-2404-nf5njuzvoh2wryoa",
+  "runner_group_name": "blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T21:28:36Z",
+    "completed_at": "2026-11-19T21:28:38Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T21:28:38Z",
+    "completed_at": "2026-11-19T21:28:38Z"
+   },
+   {
+    "name": "Checkout code",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T21:28:38Z",
+    "completed_at": "2026-11-19T21:28:40Z"
+   },
+   {
+    "name": "Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T21:28:40Z",
+    "completed_at": "2026-11-19T21:28:46Z"
+   },
+   {
+    "name": "Fetch layered build",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T21:28:46Z",
+    "completed_at": "2026-11-19T21:29:04Z"
+   },
+   {
+    "name": "Copy config",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T21:29:04Z",
+    "completed_at": "2026-11-19T21:29:04Z"
+   },
+   {
+    "name": "Build",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T21:29:04Z",
+    "completed_at": "2026-11-19T21:30:08Z"
+   },
+   {
+    "name": "Upload Artifact",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T21:30:08Z",
+    "completed_at": "2026-11-19T21:30:15Z"
+   },
+   {
+    "name": "Post Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 14,
+    "started_at": "2026-11-19T21:30:15Z",
+    "completed_at": "2026-11-19T21:30:15Z"
+   },
+   {
+    "name": "Post Checkout code",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 15,
+    "started_at": "2026-11-19T21:30:15Z",
+    "completed_at": "2026-11-19T21:30:15Z"
+   },
+   {
+    "name": "Complete runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 16,
+    "started_at": "2026-11-19T21:30:15Z",
+    "completed_at": "2026-11-19T21:30:15Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 17,
+    "started_at": "2026-11-19T21:30:15Z",
+    "completed_at": "2026-11-19T21:30:15Z"
+   }
+  ]
+ },
+ {
+  "id": 135896746817,
+  "name": "Run Tests [Chrome] 1/4 (blacksmith-4)",
+  "html_url": "https://github.com/BluebagAI/bench-element-web/actions/runs/44618916893/job/135896746817",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T21:30:18Z",
+  "started_at": "2026-11-19T21:31:21Z",
+  "completed_at": "2026-11-19T21:40:34Z",
+  "labels": [
+   "blacksmith-4vcpu-ubuntu-2404"
+  ],
+  "runner_name": "blacksmith-4vcpu-ubuntu-2404-s7qv5wjvvijqyh5h",
+  "runner_group_name": "blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T21:31:22Z",
+    "completed_at": "2026-11-19T21:31:25Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T21:31:25Z",
+    "completed_at": "2026-11-19T21:31:25Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T21:31:25Z",
+    "completed_at": "2026-11-19T21:31:27Z"
+   },
+   {
+    "name": "\ud83d\udce5 Download artifact",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T21:31:27Z",
+    "completed_at": "2026-11-19T21:31:34Z"
+   },
+   {
+    "name": "Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T21:31:34Z",
+    "completed_at": "2026-11-19T21:31:43Z"
+   },
+   {
+    "name": "Setup playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T21:31:43Z",
+    "completed_at": "2026-11-19T21:31:47Z"
+   },
+   {
+    "name": "Build the shared test packages",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T21:31:47Z",
+    "completed_at": "2026-11-19T21:31:54Z"
+   },
+   {
+    "name": "Start the web server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T21:31:54Z",
+    "completed_at": "2026-11-19T21:31:55Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 9,
+    "started_at": "2026-11-19T21:31:55Z",
+    "completed_at": "2026-11-19T21:31:55Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:31:55Z",
+    "completed_at": "2026-11-19T21:40:28Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-19T21:40:28Z",
+    "completed_at": "2026-11-19T21:40:29Z"
+   },
+   {
+    "name": "Post Setup playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 19,
+    "started_at": "2026-11-19T21:40:29Z",
+    "completed_at": "2026-11-19T21:40:30Z"
+   },
+   {
+    "name": "Post Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 20,
+    "started_at": "2026-11-19T21:40:30Z",
+    "completed_at": "2026-11-19T21:40:30Z"
+   },
+   {
+    "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:40:30Z",
+    "completed_at": "2026-11-19T21:40:30Z"
+   },
+   {
+    "name": "Complete runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 22,
+    "started_at": "2026-11-19T21:40:30Z",
+    "completed_at": "2026-11-19T21:40:32Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 23,
+    "started_at": "2026-11-19T21:40:32Z",
+    "completed_at": "2026-11-19T21:40:32Z"
+   }
+  ]
+ },
+ {
+  "id": 135896746872,
+  "name": "Run Tests [Chrome] 3/4 (blacksmith-4)",
+  "html_url": "https://github.com/BluebagAI/bench-element-web/actions/runs/44618916893/job/135896746872",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T21:30:18Z",
+  "started_at": "2026-11-19T21:31:22Z",
+  "completed_at": "2026-11-19T21:44:31Z",
+  "labels": [
+   "blacksmith-4vcpu-ubuntu-2404"
+  ],
+  "runner_name": "blacksmith-4vcpu-ubuntu-2404-d6rai2akpaitm46y",
+  "runner_group_name": "blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T21:31:23Z",
+    "completed_at": "2026-11-19T21:31:26Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T21:31:26Z",
+    "completed_at": "2026-11-19T21:31:26Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T21:31:26Z",
+    "completed_at": "2026-11-19T21:31:29Z"
+   },
+   {
+    "name": "\ud83d\udce5 Download artifact",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T21:31:29Z",
+    "completed_at": "2026-11-19T21:31:32Z"
+   },
+   {
+    "name": "Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T21:31:32Z",
+    "completed_at": "2026-11-19T21:31:43Z"
+   },
+   {
+    "name": "Setup playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T21:31:43Z",
+    "completed_at": "2026-11-19T21:31:48Z"
+   },
+   {
+    "name": "Build the shared test packages",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T21:31:48Z",
+    "completed_at": "2026-11-19T21:31:54Z"
+   },
+   {
+    "name": "Start the web server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T21:31:54Z",
+    "completed_at": "2026-11-19T21:31:55Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 9,
+    "started_at": "2026-11-19T21:31:55Z",
+    "completed_at": "2026-11-19T21:31:55Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:31:55Z",
+    "completed_at": "2026-11-19T21:44:20Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-19T21:44:20Z",
+    "completed_at": "2026-11-19T21:44:23Z"
+   },
+   {
+    "name": "Post Setup playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 19,
+    "started_at": "2026-11-19T21:44:23Z",
+    "completed_at": "2026-11-19T21:44:23Z"
+   },
+   {
+    "name": "Post Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 20,
+    "started_at": "2026-11-19T21:44:23Z",
+    "completed_at": "2026-11-19T21:44:23Z"
+   },
+   {
+    "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:44:23Z",
+    "completed_at": "2026-11-19T21:44:23Z"
+   },
+   {
+    "name": "Complete runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 22,
+    "started_at": "2026-11-19T21:44:23Z",
+    "completed_at": "2026-11-19T21:44:28Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 23,
+    "started_at": "2026-11-19T21:44:28Z",
+    "completed_at": "2026-11-19T21:44:29Z"
+   }
+  ]
+ },
+ {
+  "id": 135896746886,
+  "name": "Run Tests [Chrome] 4/4 (blacksmith-4)",
+  "html_url": "https://github.com/BluebagAI/bench-element-web/actions/runs/44618916893/job/135896746886",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T21:30:18Z",
+  "started_at": "2026-11-19T21:31:15Z",
+  "completed_at": "2026-11-19T21:42:54Z",
+  "labels": [
+   "blacksmith-4vcpu-ubuntu-2404"
+  ],
+  "runner_name": "blacksmith-4vcpu-ubuntu-2404-ip3gbgfh4vijsfv4",
+  "runner_group_name": "blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T21:31:16Z",
+    "completed_at": "2026-11-19T21:31:19Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T21:31:19Z",
+    "completed_at": "2026-11-19T21:31:19Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T21:31:19Z",
+    "completed_at": "2026-11-19T21:31:22Z"
+   },
+   {
+    "name": "\ud83d\udce5 Download artifact",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T21:31:22Z",
+    "completed_at": "2026-11-19T21:31:25Z"
+   },
+   {
+    "name": "Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T21:31:25Z",
+    "completed_at": "2026-11-19T21:31:33Z"
+   },
+   {
+    "name": "Setup playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T21:31:33Z",
+    "completed_at": "2026-11-19T21:31:37Z"
+   },
+   {
+    "name": "Build the shared test packages",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T21:31:37Z",
+    "completed_at": "2026-11-19T21:31:44Z"
+   },
+   {
+    "name": "Start the web server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T21:31:44Z",
+    "completed_at": "2026-11-19T21:31:45Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 9,
+    "started_at": "2026-11-19T21:31:45Z",
+    "completed_at": "2026-11-19T21:31:45Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:31:45Z",
+    "completed_at": "2026-11-19T21:42:47Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-19T21:42:47Z",
+    "completed_at": "2026-11-19T21:42:49Z"
+   },
+   {
+    "name": "Post Setup playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 19,
+    "started_at": "2026-11-19T21:42:49Z",
+    "completed_at": "2026-11-19T21:42:49Z"
+   },
+   {
+    "name": "Post Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 20,
+    "started_at": "2026-11-19T21:42:49Z",
+    "completed_at": "2026-11-19T21:42:49Z"
+   },
+   {
+    "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:42:49Z",
+    "completed_at": "2026-11-19T21:42:49Z"
+   },
+   {
+    "name": "Complete runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 22,
+    "started_at": "2026-11-19T21:42:49Z",
+    "completed_at": "2026-11-19T21:42:53Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 23,
+    "started_at": "2026-11-19T21:42:53Z",
+    "completed_at": "2026-11-19T21:42:53Z"
+   }
+  ]
+ },
+ {
+  "id": 135896746933,
+  "name": "Run Tests [Chrome] 2/4 (blacksmith-4)",
+  "html_url": "https://github.com/BluebagAI/bench-element-web/actions/runs/44618916893/job/135896746933",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T21:30:18Z",
+  "started_at": "2026-11-19T21:31:19Z",
+  "completed_at": "2026-11-19T21:38:09Z",
+  "labels": [
+   "blacksmith-4vcpu-ubuntu-2404"
+  ],
+  "runner_name": "blacksmith-4vcpu-ubuntu-2404-iqt3jqnifdn3743n",
+  "runner_group_name": "blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T21:31:20Z",
+    "completed_at": "2026-11-19T21:31:23Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T21:31:23Z",
+    "completed_at": "2026-11-19T21:31:24Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T21:31:24Z",
+    "completed_at": "2026-11-19T21:31:26Z"
+   },
+   {
+    "name": "\ud83d\udce5 Download artifact",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T21:31:26Z",
+    "completed_at": "2026-11-19T21:31:30Z"
+   },
+   {
+    "name": "Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T21:31:30Z",
+    "completed_at": "2026-11-19T21:31:40Z"
+   },
+   {
+    "name": "Setup playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T21:31:40Z",
+    "completed_at": "2026-11-19T21:31:46Z"
+   },
+   {
+    "name": "Build the shared test packages",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T21:31:46Z",
+    "completed_at": "2026-11-19T21:31:54Z"
+   },
+   {
+    "name": "Start the web server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-19T21:31:54Z",
+    "completed_at": "2026-11-19T21:31:55Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 9,
+    "started_at": "2026-11-19T21:31:55Z",
+    "completed_at": "2026-11-19T21:31:55Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:31:55Z",
+    "completed_at": "2026-11-19T21:38:03Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-19T21:38:03Z",
+    "completed_at": "2026-11-19T21:38:05Z"
+   },
+   {
+    "name": "Post Setup playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 19,
+    "started_at": "2026-11-19T21:38:05Z",
+    "completed_at": "2026-11-19T21:38:05Z"
+   },
+   {
+    "name": "Post Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 20,
+    "started_at": "2026-11-19T21:38:05Z",
+    "completed_at": "2026-11-19T21:38:05Z"
+   },
+   {
+    "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:38:05Z",
+    "completed_at": "2026-11-19T21:38:05Z"
+   },
+   {
+    "name": "Complete runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 22,
+    "started_at": "2026-11-19T21:38:05Z",
+    "completed_at": "2026-11-19T21:38:07Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 23,
+    "started_at": "2026-11-19T21:38:07Z",
+    "completed_at": "2026-11-19T21:38:07Z"
+   }
+  ]
+ }
+]
