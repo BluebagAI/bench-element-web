@@ -1,0 +1,33 @@
+{
+ "at": "2026-11-19T21:10:16+00:00",
+ "suite": "element-web",
+ "repo": "BluebagAI/bench-element-web",
+ "runner": "blacksmith-4",
+ "shards": "1",
+ "note": "superseded",
+ "run": "https://github.com/BluebagAI/bench-element-web/actions/runs/44611686817",
+ "run_id": 44611686817,
+ "sha": "4ed0d4e3f52c7e41903b38abe4cdc637a2649d7f",
+ "conclusion": "success",
+ "wall_s": 1498,
+ "queue_s": 12,
+ "job_s": 2318,
+ "jobs": 5,
+ "job_max_s": 721,
+ "vcpu_min": 154.5,
+ "billed_min": 42,
+ "usd": 0.336,
+ "tests": {
+  "passed": 678,
+  "failed": 0,
+  "flaky": 3,
+  "skipped": 4,
+  "failed_tests": [],
+  "flaky_tests": [
+   "accessibility/keyboard-navigation.spec.ts::without any rooms::Chrome",
+   "settings/room-settings/room-security-tab.spec.ts::should disallow changing from public to private if the user cannot alter history::Chrome",
+   "spotlight/spotlight.spec.ts::should be able to add and remove filters via keyboard::Chrome"
+  ],
+  "files": 4
+ }
+}
