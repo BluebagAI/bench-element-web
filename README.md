@@ -1,3 +1,5 @@
+> **Benchmark copy.** This repository is an unmodified copy of [element-hq/element-web](https://github.com/element-hq/element-web) at commit [`96ff4d92e81cf4b0da8ea1229a258bed5aae1bc2`](https://github.com/element-hq/element-web/commit/96ff4d92e81cf4b0da8ea1229a258bed5aae1bc2), used to benchmark CI runners on the project's own Playwright suite. It is not affiliated with or endorsed by the project. The only changes: this note, `.github/workflows/bench.yml` (run by hand only), and the project's other GitHub Actions workflows removed so nothing runs on its own. The project's licenses apply (see the license files). Each benchmark run's logs and test results are saved on the [`bench-results`](../../tree/bench-results) branch.
+
 [![Chat](https://img.shields.io/matrix/element-web:matrix.org?logo=matrix)](https://matrix.to/#/#element-web:matrix.org)
 ![Tests](https://github.com/element-hq/element-web/actions/workflows/tests.yaml/badge.svg)
 ![Static Analysis](https://github.com/element-hq/element-web/actions/workflows/static_analysis.yaml/badge.svg)
