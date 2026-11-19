@@ -1,0 +1,29 @@
+{
+ "at": "2026-11-19T21:59:56+00:00",
+ "suite": "element-web",
+ "repo": "BluebagAI/bench-element-web",
+ "runner": "blacksmith-4",
+ "shards": "1",
+ "note": "measured",
+ "run": "https://github.com/BluebagAI/bench-element-web/actions/runs/44621875197",
+ "run_id": 44621875197,
+ "sha": "4ed0d4e3f52c7e41903b38abe4cdc637a2649d7f",
+ "conclusion": "success",
+ "wall_s": 857,
+ "queue_s": 9,
+ "job_s": 2835,
+ "jobs": 5,
+ "job_max_s": 767,
+ "vcpu_min": 189.0,
+ "billed_min": 50,
+ "usd": 0.4,
+ "tests": {
+  "passed": 681,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 4,
+  "failed_tests": [],
+  "flaky_tests": [],
+  "files": 4
+ }
+}

@@ -1,0 +1,1010 @@
+﻿2026-11-19T21:46:40.3844783Z Current runner version: '2.338.2'
+2026-11-19T21:46:40.3851044Z Runner name: 'blacksmith-4vcpu-ubuntu-2404-4n5rmiwvsz4ohyat'
+2026-11-19T21:46:40.3852221Z Runner group name: 'blacksmith scale sets - blacksmith-4vcpu-ubuntu-2404'
+2026-11-19T21:46:40.3853405Z Machine name: 'ip-172-31-73-130'
+2026-11-19T21:46:40.3856477Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T21:46:40.3857637Z Actions: read
+2026-11-19T21:46:40.3858492Z Checks: write
+2026-11-19T21:46:40.3859371Z Contents: read
+2026-11-19T21:46:40.3860013Z Metadata: read
+2026-11-19T21:46:40.3860757Z PullRequests: write
+2026-11-19T21:46:40.3861403Z ##[endgroup]
+2026-11-19T21:46:40.3864086Z Secret source: Actions
+2026-11-19T21:46:40.3865220Z Cache mode: write
+2026-11-19T21:46:40.3867053Z Prepare workflow directory
+2026-11-19T21:46:40.4313109Z Prepare all required actions
+2026-11-19T21:46:40.4364191Z Getting action download info
+2026-11-19T21:46:40.8308134Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-19T21:46:40.8989765Z Download action repository 'actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333' (SHA:9000827ccba6bdab643e8b6fd33ac0654aef8333)
+2026-11-19T21:46:41.5555030Z Download action repository 'pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1' (SHA:731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1)
+2026-11-19T21:46:42.1402413Z Download action repository 'coldteadotai/boba@v1' (SHA:30df239eb2f48d7d7ff6d7934404e2e38cbf70d5)
+2026-11-19T21:46:42.7785859Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-19T21:46:43.5693893Z Setting BLACKSMITH_ACTIONS_RESULTS_URL to https://results-receiver.actions.githubusercontent.com/
+2026-11-19T21:46:43.5736027Z Complete job name: Run Tests [Chrome] 2/4 (blacksmith-4)
+2026-11-19T21:46:43.6441729Z A job started hook has been configured by the self-hosted runner administrator
+2026-11-19T21:46:43.6703487Z ##[group]Run '/setup.sh'
+2026-11-19T21:46:43.6731698Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T21:46:43.6732156Z env:
+2026-11-19T21:46:43.6732345Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 341
+2026-11-19T21:46:43.6732592Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 955
+2026-11-19T21:46:43.6732824Z   BLACKSMITH_CHECK_RUN_ID: 135906264742
+2026-11-19T21:46:43.6733122Z   BLACKSMITH_JOB_DISPLAY_NAME: Run Tests [Chrome] 2/4 (blacksmith-4)
+2026-11-19T21:46:43.6733422Z   GITHUB_ACTIONS_CACHE_MODE: write
+2026-11-19T21:46:43.6733648Z ##[endgroup]
+2026-11-19T21:46:43.7342517Z Logging daemon started (blacksmithd for logs)
+2026-11-19T21:46:43.7531598Z Results daemon started (blacksmithd for results)
+2026-11-19T21:46:43.7778491Z Background adoption and SSH setup started (PID: 3278)
+2026-11-19T21:46:43.7784248Z 
+2026-11-19T21:46:43.7784608Z ----------------------------------------
+2026-11-19T21:46:43.7785205Z View this job: https://app.blacksmith.sh/BluebagAI/runs/44621875197/jobs/135906264742
+2026-11-19T21:46:43.7785592Z SSH Access (using your GitHub SSH key):
+2026-11-19T21:46:43.7786015Z   ssh -p 64005 runner@blacksmith-4vcpu-ubuntu-2404-4n5rmiwvsz4ohyat.vm.blacksmith.sh
+2026-11-19T21:46:43.7786322Z 
+2026-11-19T21:46:43.7786586Z No GitHub SSH key? Add one at:
+2026-11-19T21:46:43.7787130Z https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+2026-11-19T21:46:43.7787642Z 
+2026-11-19T21:46:43.7787826Z ----------------------------------------
+2026-11-19T21:46:43.7792742Z 
+2026-11-19T21:46:43.7794470Z VM ID: blacksmith-4vcpu-ubuntu-2404-4n5rmiwvsz4ohyat
+2026-11-19T21:46:43.7794930Z Host: production-192.240.241.141-x8664
+2026-11-19T21:46:43.7795350Z Host Agent PID: 2271865
+2026-11-19T21:46:43.7795658Z Host Agent Git SHA: d296ee1c7
+2026-11-19T21:46:43.7795994Z Host CPU Manufacturer: AuthenticAMD
+2026-11-19T21:46:43.7796372Z Blacksmith Host Generation: gen 2
+2026-11-19T21:46:43.7796698Z Petname: production-alert-seal-3ddd9c16
+2026-11-19T21:46:43.7797029Z Region: us-west
+2026-11-19T21:46:43.7797883Z Rootfs Version: ubuntu24-full-x64-081926
+2026-11-19T21:46:43.7801554Z OS Version: Ubuntu 24.04.4 LTS
+2026-11-19T21:46:43.7802850Z 
+2026-11-19T21:46:43.7803039Z Enabling Blacksmith transparent cache
+2026-11-19T21:46:43.8217841Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-11-19T21:46:43.8218219Z with:
+2026-11-19T21:46:43.8218411Z   persist-credentials: false
+2026-11-19T21:46:43.8218850Z   repository: BluebagAI/bench-element-web
+2026-11-19T21:46:43.8221130Z   token: ***
+2026-11-19T21:46:43.8221321Z   ssh-strict: true
+2026-11-19T21:46:43.8221513Z   ssh-user: git
+2026-11-19T21:46:43.8221694Z   clean: true
+2026-11-19T21:46:43.8221885Z   sparse-checkout-cone-mode: true
+2026-11-19T21:46:43.8222105Z   fetch-depth: 1
+2026-11-19T21:46:43.8222278Z   fetch-tags: false
+2026-11-19T21:46:43.8222470Z   show-progress: true
+2026-11-19T21:46:43.8222653Z   lfs: false
+2026-11-19T21:46:43.8222828Z   submodules: false
+2026-11-19T21:46:43.8223022Z   set-safe-directory: true
+2026-11-19T21:46:43.8223270Z   allow-unsafe-pr-checkout: false
+2026-11-19T21:46:43.8223490Z env:
+2026-11-19T21:46:43.8223699Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-19T21:46:43.8224021Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 341
+2026-11-19T21:46:43.8224265Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 955
+2026-11-19T21:46:43.8224513Z   GITHUB_REPO_NAME: BluebagAI/bench-element-web
+2026-11-19T21:46:43.8224757Z ##[endgroup]
+2026-11-19T21:46:44.0708050Z Syncing repository: BluebagAI/bench-element-web
+2026-11-19T21:46:44.0709857Z ##[group]Getting Git version info
+2026-11-19T21:46:44.0710295Z Working directory is '/home/runner/_work/bench-element-web/bench-element-web'
+2026-11-19T21:46:44.0711017Z [command]/usr/local/bin/git version
+2026-11-19T21:46:44.0870103Z git version 2.55.0
+2026-11-19T21:46:44.0895345Z ##[endgroup]
+2026-11-19T21:46:44.0907069Z Temporarily overriding HOME='/home/runner/_work/_temp/9b4cb133-23b8-4536-8dda-cf0387f038ec' before making global git config changes
+2026-11-19T21:46:44.0907690Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T21:46:44.0916276Z [command]/usr/local/bin/git config --global --add safe.directory /home/runner/_work/bench-element-web/bench-element-web
+2026-11-19T21:46:44.0995861Z Deleting the contents of '/home/runner/_work/bench-element-web/bench-element-web'
+2026-11-19T21:46:44.1012080Z ##[group]Determining repository object format
+2026-11-19T21:46:44.1012996Z ##[endgroup]
+2026-11-19T21:46:44.1013620Z ##[group]Initializing the repository
+2026-11-19T21:46:44.1014137Z [command]/usr/local/bin/git init /home/runner/_work/bench-element-web/bench-element-web
+2026-11-19T21:46:44.1098596Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-19T21:46:44.1099369Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-19T21:46:44.1100056Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-19T21:46:44.1100551Z hint: call:
+2026-11-19T21:46:44.1100884Z hint:
+2026-11-19T21:46:44.1101365Z hint: 	git config --global init.defaultBranch <name>
+2026-11-19T21:46:44.1101776Z hint:
+2026-11-19T21:46:44.1102183Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-19T21:46:44.1102816Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-19T21:46:44.1103283Z hint:
+2026-11-19T21:46:44.1103558Z hint: 	git branch -m <name>
+2026-11-19T21:46:44.1103868Z hint:
+2026-11-19T21:46:44.1104285Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-19T21:46:44.1105074Z Initialized empty Git repository in /home/runner/_work/bench-element-web/bench-element-web/.git/
+2026-11-19T21:46:44.1115831Z [command]/usr/local/bin/git remote add origin https://github.com/BluebagAI/bench-element-web
+2026-11-19T21:46:44.1175703Z ##[endgroup]
+2026-11-19T21:46:44.1176123Z ##[group]Disabling automatic garbage collection
+2026-11-19T21:46:44.1184585Z [command]/usr/local/bin/git config --local gc.auto 0
+2026-11-19T21:46:44.1224728Z ##[endgroup]
+2026-11-19T21:46:44.1225177Z ##[group]Setting up auth
+2026-11-19T21:46:44.1225653Z Removing SSH command configuration
+2026-11-19T21:46:44.1233099Z [command]/usr/local/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T21:46:44.1278169Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T21:46:44.1571456Z Removing HTTP extra header
+2026-11-19T21:46:44.1577726Z [command]/usr/local/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T21:46:44.1645700Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T21:46:44.1877568Z Removing includeIf entries pointing to credentials config files
+2026-11-19T21:46:44.1884571Z [command]/usr/local/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T21:46:44.1944491Z [command]/usr/local/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T21:46:44.2151068Z [command]/usr/local/bin/git config --file /home/runner/_work/_temp/git-credentials-329a0d74-513d-44fb-b392-1822fdb3d5e7.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-19T21:46:44.2207753Z [command]/usr/local/bin/git config --local includeIf.gitdir:/home/runner/_work/bench-element-web/bench-element-web/.git.path /home/runner/_work/_temp/git-credentials-329a0d74-513d-44fb-b392-1822fdb3d5e7.config
+2026-11-19T21:46:44.2251193Z [command]/usr/local/bin/git config --local includeIf.gitdir:/home/runner/_work/bench-element-web/bench-element-web/.git/worktrees/*.path /home/runner/_work/_temp/git-credentials-329a0d74-513d-44fb-b392-1822fdb3d5e7.config
+2026-11-19T21:46:44.2302877Z [command]/usr/local/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-329a0d74-513d-44fb-b392-1822fdb3d5e7.config
+2026-11-19T21:46:44.2349581Z [command]/usr/local/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-329a0d74-513d-44fb-b392-1822fdb3d5e7.config
+2026-11-19T21:46:44.2387107Z ##[endgroup]
+2026-11-19T21:46:44.2387463Z ##[group]Fetching the repository
+2026-11-19T21:46:44.2394482Z [command]/usr/local/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4ed0d4e3f52c7e41903b38abe4cdc637a2649d7f:refs/remotes/origin/main
+2026-11-19T21:46:45.8063875Z From https://github.com/BluebagAI/bench-element-web
+2026-11-19T21:46:45.8065556Z  * [new ref]         4ed0d4e3f52c7e41903b38abe4cdc637a2649d7f -> origin/main
+2026-11-19T21:46:45.8123042Z [command]/usr/local/bin/git branch --list --remote origin/main
+2026-11-19T21:46:45.8163112Z   origin/main
+2026-11-19T21:46:45.8176089Z [command]/usr/local/bin/git rev-parse refs/remotes/origin/main
+2026-11-19T21:46:45.8212895Z 4ed0d4e3f52c7e41903b38abe4cdc637a2649d7f
+2026-11-19T21:46:45.8216575Z ##[endgroup]
+2026-11-19T21:46:45.8217041Z ##[group]Determining the checkout info
+2026-11-19T21:46:45.8219793Z ##[endgroup]
+2026-11-19T21:46:45.8227112Z [command]/usr/local/bin/git sparse-checkout disable
+2026-11-19T21:46:45.8286959Z [command]/usr/local/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-19T21:46:45.8335248Z ##[group]Checking out the ref
+2026-11-19T21:46:45.8343846Z [command]/usr/local/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-19T21:46:46.3172182Z Switched to a new branch 'main'
+2026-11-19T21:46:46.3172987Z branch 'main' set up to track 'origin/main'.
+2026-11-19T21:46:46.3196719Z ##[endgroup]
+2026-11-19T21:46:46.3270484Z [command]/usr/local/bin/git log -1 --format=%H
+2026-11-19T21:46:46.3321330Z 4ed0d4e3f52c7e41903b38abe4cdc637a2649d7f
+2026-11-19T21:46:46.3340715Z ##[group]Removing auth
+2026-11-19T21:46:46.3341625Z Removing SSH command configuration
+2026-11-19T21:46:46.3347334Z [command]/usr/local/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T21:46:46.3436376Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T21:46:46.3714397Z Removing HTTP extra header
+2026-11-19T21:46:46.3721116Z [command]/usr/local/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T21:46:46.3772930Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T21:46:46.3989427Z Removing includeIf entries pointing to credentials config files
+2026-11-19T21:46:46.3990556Z [command]/usr/local/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T21:46:46.4026632Z includeif.gitdir:/home/runner/_work/bench-element-web/bench-element-web/.git.path
+2026-11-19T21:46:46.4027221Z includeif.gitdir:/home/runner/_work/bench-element-web/bench-element-web/.git/worktrees/*.path
+2026-11-19T21:46:46.4027674Z includeif.gitdir:/github/workspace/.git.path
+2026-11-19T21:46:46.4028028Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-19T21:46:46.4035302Z [command]/usr/local/bin/git config --local --get-all includeif.gitdir:/home/runner/_work/bench-element-web/bench-element-web/.git.path
+2026-11-19T21:46:46.4066169Z /home/runner/_work/_temp/git-credentials-329a0d74-513d-44fb-b392-1822fdb3d5e7.config
+2026-11-19T21:46:46.4078386Z [command]/usr/local/bin/git config --local --unset includeif.gitdir:/home/runner/_work/bench-element-web/bench-element-web/.git.path \/home\/runner\/_work\/_temp\/git\-credentials\-329a0d74\-513d\-44fb\-b392\-1822fdb3d5e7\.config
+2026-11-19T21:46:46.4120388Z [command]/usr/local/bin/git config --local --get-all includeif.gitdir:/home/runner/_work/bench-element-web/bench-element-web/.git/worktrees/*.path
+2026-11-19T21:46:46.4166348Z /home/runner/_work/_temp/git-credentials-329a0d74-513d-44fb-b392-1822fdb3d5e7.config
+2026-11-19T21:46:46.4178526Z [command]/usr/local/bin/git config --local --unset includeif.gitdir:/home/runner/_work/bench-element-web/bench-element-web/.git/worktrees/*.path \/home\/runner\/_work\/_temp\/git\-credentials\-329a0d74\-513d\-44fb\-b392\-1822fdb3d5e7\.config
+2026-11-19T21:46:46.4223852Z [command]/usr/local/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-19T21:46:46.4257361Z /github/runner_temp/git-credentials-329a0d74-513d-44fb-b392-1822fdb3d5e7.config
+2026-11-19T21:46:46.4267111Z [command]/usr/local/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-329a0d74\-513d\-44fb\-b392\-1822fdb3d5e7\.config
+2026-11-19T21:46:46.4318400Z [command]/usr/local/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-19T21:46:46.4355751Z /github/runner_temp/git-credentials-329a0d74-513d-44fb-b392-1822fdb3d5e7.config
+2026-11-19T21:46:46.4369705Z [command]/usr/local/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-329a0d74\-513d\-44fb\-b392\-1822fdb3d5e7\.config
+2026-11-19T21:46:46.4430706Z [command]/usr/local/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T21:46:46.4704820Z Removing credentials config '/home/runner/_work/_temp/git-credentials-329a0d74-513d-44fb-b392-1822fdb3d5e7.config'
+2026-11-19T21:46:46.4717260Z ##[endgroup]
+2026-11-19T21:46:46.4924693Z ##[group]Run actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+2026-11-19T21:46:46.4925028Z with:
+2026-11-19T21:46:46.4925180Z   name: webapp
+2026-11-19T21:46:46.4925334Z   path: apps/web/webapp
+2026-11-19T21:46:46.4925497Z   merge-multiple: false
+2026-11-19T21:46:46.4925691Z   repository: BluebagAI/bench-element-web
+2026-11-19T21:46:46.4925888Z   run-id: 44621875197
+2026-11-19T21:46:46.4957417Z   skip-decompress: false
+2026-11-19T21:46:46.4957827Z   digest-mismatch: error
+2026-11-19T21:46:46.4958575Z env:
+2026-11-19T21:46:46.4958780Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-19T21:46:46.4959491Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 341
+2026-11-19T21:46:46.4959762Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 955
+2026-11-19T21:46:46.4959989Z   GITHUB_REPO_NAME: BluebagAI/bench-element-web
+2026-11-19T21:46:46.4960297Z ##[endgroup]
+2026-11-19T21:46:46.6541890Z Downloading single artifact
+2026-11-19T21:46:46.8938171Z Preparing to download the following artifacts:
+2026-11-19T21:46:46.8939177Z - webapp (ID: 14575744292, Size: 61466346, Expected Digest: sha256:04fa82b50cef39f2afa4f57d97e92dba27006537f5bceec54d29a55e2aaf8b1d)
+2026-11-19T21:46:47.3972495Z Redirecting to blob download url: https://productionresultssa11.blob.core.windows.net/actions-results/5edb31ec-bf96-4e5f-b5e3-d987c8886e12/workflow-job-run-a95ec0f8-026d-5930-88f0-ad4a2961049f/artifacts/2c66f372a6c929fe685806cb8c3039123427268466673bc705c5089ac843883d.zip
+2026-11-19T21:46:47.3973606Z Starting download of artifact to: /home/runner/_work/bench-element-web/bench-element-web/apps/web/webapp
+2026-11-19T21:46:47.6552771Z (node:3847) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-11-19T21:46:47.6553565Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-19T21:46:50.4591090Z SHA256 digest of downloaded artifact is 04fa82b50cef39f2afa4f57d97e92dba27006537f5bceec54d29a55e2aaf8b1d
+2026-11-19T21:46:50.4591889Z Artifact download completed successfully.
+2026-11-19T21:46:50.4592532Z Total of 1 artifact(s) downloaded
+2026-11-19T21:46:50.4597944Z Download artifact has finished successfully
+2026-11-19T21:46:50.4896692Z ##[group]Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1
+2026-11-19T21:46:50.4897229Z with:
+2026-11-19T21:46:50.4897501Z   cache: true
+2026-11-19T21:46:50.4897790Z   save-cache: true
+2026-11-19T21:46:50.4898750Z   install: true
+2026-11-19T21:46:50.4899626Z   require-lockfile: true
+2026-11-19T21:46:50.4899953Z   dest: ~/setup-pnpm
+2026-11-19T21:46:50.4900186Z   working-directory: .
+2026-11-19T21:46:50.4900405Z env:
+2026-11-19T21:46:50.4900628Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-19T21:46:50.4901002Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 341
+2026-11-19T21:46:50.4901347Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 955
+2026-11-19T21:46:50.4901801Z   GITHUB_REPO_NAME: BluebagAI/bench-element-web
+2026-11-19T21:46:50.4902332Z ##[endgroup]
+2026-11-19T21:46:50.6230618Z ##[group]Installing pnpm...
+2026-11-19T21:46:50.8744343Z Cache hit for: pnpm-binary-linux-x64-12.21.0
+2026-11-19T21:46:51.0231080Z Received 26766540 of 26766540 (100.0%), 230.0 MBs/sec
+2026-11-19T21:46:51.0231846Z Cache Size: ~26 MB (26766540 B)
+2026-11-19T21:46:51.0254231Z [command]/usr/bin/tar -xf /home/runner/_work/_temp/25975c36-fdbe-407d-b09a-26ebd58a9887/cache.tzst -P -C /home/runner/_work/bench-element-web/bench-element-web --use-compress-program unzstd
+2026-11-19T21:46:51.1596569Z Cache restored successfully
+2026-11-19T21:46:51.1615659Z pnpm restored from cache key: pnpm-binary-linux-x64-12.21.0
+2026-11-19T21:46:51.4271741Z ##[endgroup]
+2026-11-19T21:46:51.4272127Z Installation Completed!
+2026-11-19T21:46:51.4284194Z ##[group]Restoring cache...
+2026-11-19T21:46:51.7301096Z Cache hit for: pnpm-lockfile-verified-Linux-x64-e63467a5aee74573a285add34b80dd8577c85927751e88eaa812d01d0eb903ff
+2026-11-19T21:46:51.7404978Z Received 1127 of 1127 (100.0%), 0.2 MBs/sec
+2026-11-19T21:46:51.7406608Z Cache Size: ~0 MB (1127 B)
+2026-11-19T21:46:51.7421578Z [command]/usr/bin/tar -xf /home/runner/_work/_temp/79659aae-3e7e-4334-a979-e2ff8fe13600/cache.tzst -P -C /home/runner/_work/bench-element-web/bench-element-web --use-compress-program unzstd
+2026-11-19T21:46:51.7468368Z Cache restored successfully
+2026-11-19T21:46:51.7471485Z Lockfile verification cache restored from key: pnpm-lockfile-verified-Linux-x64-e63467a5aee74573a285add34b80dd8577c85927751e88eaa812d01d0eb903ff
+2026-11-19T21:46:51.7480311Z [command]/home/runner/setup-pnpm/pnpm store path
+2026-11-19T21:46:51.7691157Z /home/runner/setup-pnpm/store/v11
+2026-11-19T21:46:51.9847592Z Cache hit for restore-key: pnpm-cache-Linux-x64-123baa0095a067166ecdebc24f943d75fd4b1560104291331fed19f26cbee0f8-e63467a5aee74573a285add34b80dd8577c85927751e88eaa812d01d0eb903ff-5cd7a0aef0565f4e380daaba9f1b69a5145d90a9132e4cbe8e3bc533fa7791f1-44611686817-1-33722758-e88b-4d21-9805-c73cfa951826
+2026-11-19T21:46:53.0038488Z Received 369098752 of 469983104 (78.5%), 351.6 MBs/sec
+2026-11-19T21:46:53.2902538Z Received 469983104 of 469983104 (100.0%), 346.4 MBs/sec
+2026-11-19T21:46:53.2903105Z Cache Size: ~448 MB (469983104 B)
+2026-11-19T21:46:53.2943355Z [command]/usr/bin/tar -xf /home/runner/_work/_temp/8ffcde26-bac0-4da1-bf87-9f4791bf57f2/cache.tzst -P -C /home/runner/_work/bench-element-web/bench-element-web --use-compress-program unzstd
+2026-11-19T21:46:58.1913524Z Cache restored successfully
+2026-11-19T21:46:58.2220943Z Cache restored from key: pnpm-cache-Linux-x64-123baa0095a067166ecdebc24f943d75fd4b1560104291331fed19f26cbee0f8-e63467a5aee74573a285add34b80dd8577c85927751e88eaa812d01d0eb903ff-5cd7a0aef0565f4e380daaba9f1b69a5145d90a9132e4cbe8e3bc533fa7791f1-44611686817-1-33722758-e88b-4d21-9805-c73cfa951826
+2026-11-19T21:46:58.2222578Z ##[endgroup]
+2026-11-19T21:46:58.2222930Z ##[group]Installing runtime node@26...
+2026-11-19T21:46:58.7117254Z 
+2026-11-19T21:46:58.7118096Z dependencies:
+2026-11-19T21:46:58.7118406Z + node 26.13.1
+2026-11-19T21:46:58.7118512Z 
+2026-11-19T21:46:58.7144316Z Done in 474ms using pnpm v12.21.0
+2026-11-19T21:46:58.7173866Z ##[endgroup]
+2026-11-19T21:46:58.9329694Z ##[group]Running pnpm install --frozen-lockfile --no-runtime...
+2026-11-19T21:46:58.9876504Z Scope: all 14 workspace projects
+2026-11-19T21:46:59.0966599Z [WARN] Unsupported engine for @renovatebot/pep440@4.2.4: wanted: {"node":"^20.9.0 || ^22.11.0 || ^24"} (current: {"node":"26.13.1"})
+2026-11-19T21:46:59.1869272Z ✓ Lockfile passes supply-chain policies (verified 1h ago)
+2026-11-19T21:46:59.1869862Z Lockfile is up to date, resolution step is skipped
+2026-11-19T21:46:59.3617303Z Packages are hard linked from the content-addressable store to the virtual store.
+2026-11-19T21:46:59.3618211Z   Content-addressable store is at: /home/runner/setup-pnpm/store/v11
+2026-11-19T21:46:59.3618974Z   Virtual store is at:             node_modules/.pnpm
+2026-11-19T21:47:00.1107626Z Packages: +2272
+2026-11-19T21:47:00.1108225Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-11-19T21:47:00.1825205Z Progress: resolved 2272, reused 2272, downloaded 0, added 2272, done
+2026-11-19T21:47:00.6697252Z Agent skills awaiting approval: storybook-addon-vis.
+2026-11-19T21:47:00.6697642Z Run "pnpm approve" to review them.
+2026-11-19T21:47:00.6719024Z . postinstall$ node scripts/pnpm-link.ts
+2026-11-19T21:47:00.7619846Z . postinstall: Done
+2026-11-19T21:47:00.7690563Z 
+2026-11-19T21:47:00.7691753Z devDependencies:
+2026-11-19T21:47:00.7692448Z + @action-validator/cli 0.6.0
+2026-11-19T21:47:00.7693027Z + @action-validator/core 0.6.0
+2026-11-19T21:47:00.7693772Z + @nx-tools/nx-container 7.3.0
+2026-11-19T21:47:00.7694091Z + @playwright/test 1.65.1
+2026-11-19T21:47:00.7694382Z + @types/node 25.9.3
+2026-11-19T21:47:00.7694740Z + @typescript/native <- typescript 7.0.2
+2026-11-19T21:47:00.7695070Z + @vitest/coverage-v8 5.1.0
+2026-11-19T21:47:00.7695356Z + @vitest/ui 5.1.0
+2026-11-19T21:47:00.7695615Z + cronstrue 3.39.0
+2026-11-19T21:47:00.7695900Z + eslint-plugin-element-call 0.0.0
+2026-11-19T21:47:00.7696318Z + eslint-plugin-element-web <- packages/eslint-plugin-element-web
+2026-11-19T21:47:00.7698462Z + eslint-plugin-react-web-api 5.30.3
+2026-11-19T21:47:00.7698980Z + eslint-plugin-storybook 10.6.7
+2026-11-19T21:47:00.7709446Z + husky 9.1.7
+2026-11-19T21:47:00.7709762Z + knip 6.45.1
+2026-11-19T21:47:00.7710029Z + lint-staged 17.6.1
+2026-11-19T21:47:00.7710305Z + lodash 4.18.1
+2026-11-19T21:47:00.7710613Z + mermaid 12.3.0
+2026-11-19T21:47:00.7710875Z + minimist 1.2.8
+2026-11-19T21:47:00.7711170Z + nx 24.0.6
+2026-11-19T21:47:00.7711409Z + oxfmt 0.78.0
+2026-11-19T21:47:00.7711656Z + oxlint 1.93.0
+2026-11-19T21:47:00.7711921Z + oxlint-tsgolint 7.0.2007
+2026-11-19T21:47:00.7712375Z + typescript <- @typescript/typescript6 6.0.2
+2026-11-19T21:47:00.7712729Z + vitepress 1.6.4
+2026-11-19T21:47:00.7713003Z + vitepress-plugin-mermaid 2.0.17
+2026-11-19T21:47:00.7713368Z + vitest 5.1.0
+2026-11-19T21:47:00.7713617Z + yaml 2.9.1
+2026-11-19T21:47:00.7713797Z 
+2026-11-19T21:47:00.7714404Z The integrity of 1178 files was checked, because their timestamps changed since the store recorded them. A backup tool, an antivirus scan, or a copied store can cause this.
+2026-11-19T21:47:00.7715009Z Done in 1.8s using pnpm v12.21.0
+2026-11-19T21:47:00.7807112Z ##[endgroup]
+2026-11-19T21:47:00.8159868Z Prepare all required actions
+2026-11-19T21:47:00.8160621Z Getting action download info
+2026-11-19T21:47:00.9642824Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-19T21:47:01.1426989Z ##[group]Run ./.github/actions/setup-playwright
+2026-11-19T21:47:01.1427405Z with:
+2026-11-19T21:47:01.1427689Z   needs-webkit: false
+2026-11-19T21:47:01.1427995Z   write-cache: true
+2026-11-19T21:47:01.1428275Z env:
+2026-11-19T21:47:01.1428598Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-19T21:47:01.1429045Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 341
+2026-11-19T21:47:01.1429431Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 955
+2026-11-19T21:47:01.1429839Z   GITHUB_REPO_NAME: BluebagAI/bench-element-web
+2026-11-19T21:47:01.1430276Z   PNPM_HOME: /home/runner/setup-pnpm
+2026-11-19T21:47:01.1430665Z   PNPM_CONFIG_GLOBAL_SHIMS: {"node":false}
+2026-11-19T21:47:01.1431047Z ##[endgroup]
+2026-11-19T21:47:01.1590233Z ##[start-action display=Calculate cache key;id=__self.key]
+2026-11-19T21:47:01.1642743Z ##[group]Run PW_VERSION=$(pnpm --silent -- playwright --version | awk '{print $2}')
+2026-11-19T21:47:01.1643614Z [36;1mPW_VERSION=$(pnpm --silent -- playwright --version | awk '{print $2}')[0m
+2026-11-19T21:47:01.1645498Z [36;1mecho "key=${PREFIX}-playwright-${PW_VERSION}" >> $GITHUB_OUTPUT[0m
+2026-11-19T21:47:01.1693984Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T21:47:01.1694307Z env:
+2026-11-19T21:47:01.1694549Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-19T21:47:01.1694842Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 341
+2026-11-19T21:47:01.1695094Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 955
+2026-11-19T21:47:01.1695375Z   GITHUB_REPO_NAME: BluebagAI/bench-element-web
+2026-11-19T21:47:01.1695651Z   PNPM_HOME: /home/runner/setup-pnpm
+2026-11-19T21:47:01.1696663Z   PNPM_CONFIG_GLOBAL_SHIMS: {"node":false}
+2026-11-19T21:47:01.1696914Z   PREFIX: Linux-X64
+2026-11-19T21:47:01.1697178Z ##[endgroup]
+2026-11-19T21:47:01.6482044Z ##[end-action id=__self.key;outcome=success;conclusion=success;duration_ms=489]
+2026-11-19T21:47:01.6485083Z ##[start-action display=Cache playwright binaries;id=__self.cache]
+2026-11-19T21:47:01.6527523Z ##[group]Run actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-19T21:47:01.6527816Z with:
+2026-11-19T21:47:01.6527996Z   path: ~/.cache/ms-playwright
+2026-11-19T21:47:01.6528256Z   key: Linux-X64-playwright-1.65.1
+2026-11-19T21:47:01.6528491Z   enableCrossOsArchive: false
+2026-11-19T21:47:01.6528698Z   fail-on-cache-miss: false
+2026-11-19T21:47:01.6530185Z   lookup-only: false
+2026-11-19T21:47:01.6530365Z   save-always: false
+2026-11-19T21:47:01.6530537Z env:
+2026-11-19T21:47:01.6530737Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-19T21:47:01.6531000Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 341
+2026-11-19T21:47:01.6532188Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 955
+2026-11-19T21:47:01.6532504Z   GITHUB_REPO_NAME: BluebagAI/bench-element-web
+2026-11-19T21:47:01.6532818Z   PNPM_HOME: /home/runner/setup-pnpm
+2026-11-19T21:47:01.6533053Z   PNPM_CONFIG_GLOBAL_SHIMS: {"node":false}
+2026-11-19T21:47:01.6533474Z ##[endgroup]
+2026-11-19T21:47:01.9952887Z Cache hit for: Linux-X64-playwright-1.65.1
+2026-11-19T21:47:03.0377647Z Received 322961408 of 520419133 (62.1%), 306.5 MBs/sec
+2026-11-19T21:47:03.9020002Z Received 520419133 of 520419133 (100.0%), 265.8 MBs/sec
+2026-11-19T21:47:03.9021320Z Cache Size: ~496 MB (520419133 B)
+2026-11-19T21:47:03.9113708Z [command]/usr/bin/tar -xf /home/runner/_work/_temp/aac67f56-cc84-4a82-8fb1-47299f5334f5/cache.tzst -P -C /home/runner/_work/bench-element-web/bench-element-web --use-compress-program unzstd
+2026-11-19T21:47:06.5249262Z Cache restored successfully
+2026-11-19T21:47:06.6630587Z Cache restored from key: Linux-X64-playwright-1.65.1
+2026-11-19T21:47:06.6749347Z ##[end-action id=__self.cache;outcome=success;conclusion=success;duration_ms=5026]
+2026-11-19T21:47:06.6752046Z ##[start-action display=Restore playwright binaries cache;id=__self.cache-restore]
+2026-11-19T21:47:06.6760470Z ##[end-action id=__self.cache-restore;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T21:47:06.6762491Z ##[start-action display=Install Playwright browsers;id=__self.__run]
+2026-11-19T21:47:06.6777918Z ##[end-action id=__self.__run;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T21:47:06.6780640Z ##[start-action display=Install system dependencies for WebKit;id=__self.__run_2]
+2026-11-19T21:47:06.6786461Z ##[end-action id=__self.__run_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-19T21:47:06.6830865Z ##[group]Run pnpm exec nx run-many -t build:playwright
+2026-11-19T21:47:06.6831472Z [36;1mpnpm exec nx run-many -t build:playwright[0m
+2026-11-19T21:47:06.6869005Z shell: /usr/bin/bash -e {0}
+2026-11-19T21:47:06.6869353Z env:
+2026-11-19T21:47:06.6869694Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-19T21:47:06.6870150Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 341
+2026-11-19T21:47:06.6870541Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 955
+2026-11-19T21:47:06.6870951Z   GITHUB_REPO_NAME: BluebagAI/bench-element-web
+2026-11-19T21:47:06.6871365Z   PNPM_HOME: /home/runner/setup-pnpm
+2026-11-19T21:47:06.6871750Z   PNPM_CONFIG_GLOBAL_SHIMS: {"node":false}
+2026-11-19T21:47:06.6872128Z ##[endgroup]
+2026-11-19T21:47:07.7617462Z 
+2026-11-19T21:47:07.7619499Z [7m[1m[36m NX [39m[22m[27m  [36mRunning target [1mbuild:playwright[22m for project @element-hq/element-web-playwright-common and [1m1[22m task it depends on:[39m
+2026-11-19T21:47:07.7620095Z 
+2026-11-19T21:47:07.7620381Z [2m-[22m @element-hq/element-web-playwright-common
+2026-11-19T21:47:07.7620584Z 
+2026-11-19T21:47:07.7620682Z [2m[36m[39m[22m
+2026-11-19T21:47:07.7807489Z 
+2026-11-19T21:47:07.7809102Z [2m> [22m[2mnx run[22m @element-hq/element-web-module-api:build
+2026-11-19T21:47:07.7809523Z 
+2026-11-19T21:47:07.7821874Z [2m> [22mvite build
+2026-11-19T21:47:07.7822147Z 
+2026-11-19T21:47:08.2447671Z [36mvite v8.3.8 [32mbuilding client environment for production...[36m[39m
+2026-11-19T21:47:09.2362579Z transforming...
+2026-11-19T21:47:09.3038379Z [32m✓[0m 53 modules transformed.
+2026-11-19T21:47:09.3203726Z rendering chunks...
+2026-11-19T21:47:09.3410052Z 
+2026-11-19T21:47:09.3410795Z [unplugin:dts] Start generate declaration files...
+2026-11-19T21:47:09.4007364Z [unplugin:dts] Start bundling declaration files...
+2026-11-19T21:47:09.9980010Z Analysis will use the bundled TypeScript version 6.0.3
+2026-11-19T21:47:11.8912698Z [33mWarning: src/api/client.ts:129:1 - (ae-extra-release-tag) The doc comment should not contain more than one release tag[39m
+2026-11-19T21:47:11.8913596Z [33mWarning: src/api/client.ts:161:1 - (ae-extra-release-tag) The doc comment should not contain more than one release tag[39m
+2026-11-19T21:47:11.8914389Z [33mWarning: src/api/urlpreview.ts:13:4 - (tsdoc-param-tag-missing-hyphen) The @param block should be followed by a parameter name and then a hyphen[39m
+2026-11-19T21:47:11.8915222Z [33mWarning: src/api/urlpreview.ts:14:4 - (tsdoc-param-tag-missing-hyphen) The @param block should be followed by a parameter name and then a hyphen[39m
+2026-11-19T21:47:11.9043709Z [unplugin:dts] Declaration files built in 3561ms.
+2026-11-19T21:47:11.9044240Z 
+2026-11-19T21:47:11.9044699Z computing gzip size...
+2026-11-19T21:47:11.9069730Z [2mlib/[0m[36melement-web-plugin-engine.js  [0m[1;2m38.02 kB[0m[2m │ gzip: 10.19 kB[0m[2m │ map: 150.97 kB[0m
+2026-11-19T21:47:11.9070538Z 
+2026-11-19T21:47:11.9233751Z transforming...
+2026-11-19T21:47:11.9473109Z [32m✓[0m 53 modules transformed.
+2026-11-19T21:47:11.9532294Z rendering chunks...
+2026-11-19T21:47:11.9686811Z computing gzip size...
+2026-11-19T21:47:11.9690412Z [2mlib/[0m[36melement-web-plugin-engine.umd.cjs  [0m[1;2m29.27 kB[0m[2m │ gzip: 9.27 kB[0m[2m │ map: 150.83 kB[0m
+2026-11-19T21:47:11.9691094Z 
+2026-11-19T21:47:11.9695741Z [32m✓ built in 3.72s[39m
+2026-11-19T21:47:11.9707810Z [33m[33m[PLUGIN_TIMINGS] [0mJavaScript callbacks ran for 3.6s of this 3.7s build (97%).
+2026-11-19T21:47:11.9708398Z The slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+2026-11-19T21:47:11.9708944Z   - plugin unplugin-dts writeBundle (69%, 2.6s, 2 calls)
+2026-11-19T21:47:11.9709253Z Additional callback time came from callbacks under 1s.
+2026-11-19T21:47:11.9709669Z See https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
+2026-11-19T21:47:11.9710021Z [39m
+2026-11-19T21:47:12.0382830Z 
+2026-11-19T21:47:12.0384578Z [2m> [22m[2mnx run[22m @element-hq/element-web-playwright-common:"build:playwright"
+2026-11-19T21:47:12.0385049Z 
+2026-11-19T21:47:12.0385982Z [2m> [22mtsc -p tsconfig.build.json
+2026-11-19T21:47:12.0386283Z 
+2026-11-19T21:47:13.0894646Z 
+2026-11-19T21:47:13.0895925Z [2m[32m[39m[22m
+2026-11-19T21:47:13.0896201Z 
+2026-11-19T21:47:13.0897095Z [7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mbuild:playwright[22m for project @element-hq/element-web-playwright-common and [1m1[22m task it depends on[39m
+2026-11-19T21:47:13.0897883Z 
+2026-11-19T21:47:13.0897937Z 
+2026-11-19T21:47:13.0925452Z   Run duration:      5.3s
+2026-11-19T21:47:13.0925835Z   Cache:             0/2 hit (0%)
+2026-11-19T21:47:13.0926178Z   Critical path:     5.3s (2 tasks)
+2026-11-19T21:47:13.0926511Z   Recoverable time:  <1ms
+2026-11-19T21:47:13.1547468Z ##[group]Run pnpm exec serve -p 8080 -L -u ./webapp > serve.log 2>&1 &
+2026-11-19T21:47:13.1548170Z [36;1mpnpm exec serve -p 8080 -L -u ./webapp > serve.log 2>&1 &[0m
+2026-11-19T21:47:13.1548945Z [36;1mfor i in $(seq 60); do curl -sf -o /dev/null http://localhost:8080/config.json && break; sleep 1; done[0m
+2026-11-19T21:47:13.1549702Z [36;1mcurl -sf -o /dev/null http://localhost:8080/config.json[0m
+2026-11-19T21:47:13.1590607Z shell: /usr/bin/bash -e {0}
+2026-11-19T21:47:13.1591024Z env:
+2026-11-19T21:47:13.1591407Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-19T21:47:13.1591906Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 341
+2026-11-19T21:47:13.1592581Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 955
+2026-11-19T21:47:13.1593707Z   GITHUB_REPO_NAME: BluebagAI/bench-element-web
+2026-11-19T21:47:13.1594176Z   PNPM_HOME: /home/runner/setup-pnpm
+2026-11-19T21:47:13.1594595Z   PNPM_CONFIG_GLOBAL_SHIMS: {"node":false}
+2026-11-19T21:47:13.1594996Z ##[endgroup]
+2026-11-19T21:47:14.2164324Z ##[group]Run pnpm exec playwright test \
+2026-11-19T21:47:14.2164809Z [36;1mpnpm exec playwright test \[0m
+2026-11-19T21:47:14.2165214Z [36;1m    --shard=2/4 \[0m
+2026-11-19T21:47:14.2165572Z [36;1m    --project=Chrome \[0m
+2026-11-19T21:47:14.2165931Z [36;1m    --grep-invert=@mergequeue \[0m
+2026-11-19T21:47:14.2166330Z [36;1m    --reporter=list,json[0m
+2026-11-19T21:47:14.2198009Z shell: /usr/bin/bash -e {0}
+2026-11-19T21:47:14.2198319Z env:
+2026-11-19T21:47:14.2198572Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-19T21:47:14.2198889Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 341
+2026-11-19T21:47:14.2199156Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 955
+2026-11-19T21:47:14.2199453Z   GITHUB_REPO_NAME: BluebagAI/bench-element-web
+2026-11-19T21:47:14.2199773Z   PNPM_HOME: /home/runner/setup-pnpm
+2026-11-19T21:47:14.2200038Z   PNPM_CONFIG_GLOBAL_SHIMS: {"node":false}
+2026-11-19T21:47:14.2200329Z   PLAYWRIGHT_JSON_OUTPUT_FILE: results.json
+2026-11-19T21:47:14.2200678Z ##[endgroup]
+2026-11-19T21:47:18.9189284Z 
+2026-11-19T21:47:18.9191339Z Running 166 tests using 1 worker, shard 2 of 4
+2026-11-19T21:47:18.9191719Z 
+2026-11-19T21:47:31.8279469Z Registered test user @user_f1945c06b05585996ddc-04ae02a9b4fb390c6607:localhost with displayname Bob
+2026-11-19T21:47:35.0441873Z   ✓    1 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-header.spec.ts:23:5 › Header section of the room list › should render the header section @screenshot (3.4s)
+2026-11-19T21:47:35.2321490Z Registered test user @user_f1945c06b05585996ddc-cb900444a502d0ada2ac:localhost with displayname Grace
+2026-11-19T21:47:39.4998414Z   ✓    2 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-header.spec.ts:44:5 › Header section of the room list › should render the header section for a space @screenshot (4.4s)
+2026-11-19T21:47:39.7058068Z Registered test user @user_f8ad58ff577617832880-e2a6e8d2ac20c6e9a316:localhost with displayname Eve
+2026-11-19T21:47:44.8444183Z   ✓    3 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-panel.spec.ts:32:5 › Room list panel › should render the room list panel @screenshot (5.3s)
+2026-11-19T21:47:44.9905118Z Registered test user @user_f8ad58ff577617832880-2f70d910ce4f28e9ac31:localhost with displayname Eve
+2026-11-19T21:47:49.7146945Z   ✓    4 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-panel.spec.ts:41:9 › Room list panel › small screen › should respond to small screen sizes @screenshot (4.9s)
+2026-11-19T21:47:49.8640735Z Registered test user @user_fa476d8b4bb6e64e7e7c-b9fc22292e0b72f1b6ad:localhost with displayname Bob
+2026-11-19T21:47:51.7134675Z   ✓    5 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-search.spec.ts:21:5 › Search section of the room list › should render the search section @screenshot (2.0s)
+2026-11-19T21:47:51.8584532Z Registered test user @user_fa476d8b4bb6e64e7e7c-27b721ad8416aea528c3:localhost with displayname Judy
+2026-11-19T21:47:53.7765164Z   ✓    6 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-search.spec.ts:28:5 › Search section of the room list › should open the spotlight when the search button is clicked (2.0s)
+2026-11-19T21:47:53.9269759Z Registered test user @user_fa476d8b4bb6e64e7e7c-3534032b0e4d11192c0f:localhost with displayname Charlie
+2026-11-19T21:47:55.7399414Z   ✓    7 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-search.spec.ts:35:5 › Search section of the room list › should open the room directory when the search button is clicked (2.0s)
+2026-11-19T21:47:55.8858122Z Registered test user @user_fa476d8b4bb6e64e7e7c-1e1d64c645924a4a2442:localhost with displayname Isaac
+2026-11-19T21:48:01.9777314Z   ✓    8 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-search.spec.ts:54:5 › Search section of the room list › should scroll a room picked from the spotlight into view (6.2s)
+2026-11-19T21:48:02.1214658Z Registered test user @user_fa476d8b4bb6e64e7e7c-c847f854696e711ff70f:localhost with displayname Grace
+2026-11-19T21:48:05.4997888Z   ✓    9 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-search.spec.ts:68:5 › Search section of the room list › should expand a collapsed section to show a room picked from the spotlight (3.5s)
+2026-11-19T21:48:05.6459064Z Registered test user @user_cedd8534aa9b8886ebf2-df9d1dc851891edb89a7:localhost with displayname Alice
+2026-11-19T21:48:08.2315326Z   ✓   10 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:50:9 › Room list sections › Section rendering › should render sections with correct rooms in each @screenshot (2.7s)
+2026-11-19T21:48:08.3688563Z Registered test user @user_cedd8534aa9b8886ebf2-ee1c1615aaa60be4d2f8:localhost with displayname Alice
+2026-11-19T21:48:10.8542774Z   ✓   11 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:78:9 › Room list sections › Section rendering › should only show non-empty sections (2.6s)
+2026-11-19T21:48:11.0012061Z Registered test user @user_cedd8534aa9b8886ebf2-b6c2c55b55cc68666a71:localhost with displayname Alice
+2026-11-19T21:48:13.3865604Z   ✓   12 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:94:9 › Room list sections › Section rendering › should render a flat list when there is only rooms in Rooms section (2.5s)
+2026-11-19T21:48:13.5187574Z Registered test user @user_cedd8534aa9b8886ebf2-36a0c95f299a4fa1091c:localhost with displayname Alice
+2026-11-19T21:48:15.6835884Z   ✓   13 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:116:9 › Room list sections › Show sections setting › toggling RoomList.showSections switches between a sectioned and a flat list (2.3s)
+2026-11-19T21:48:15.8181792Z Registered test user @user_cedd8534aa9b8886ebf2-fa933eef7cab2ff66d4b:localhost with displayname Alice
+2026-11-19T21:48:17.5832942Z getBot: Create bot user bot_0015 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:48:18.5752777Z   ✓   14 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:157:9 › Room list sections › Show people section setting › puts the direct messages in their own section by default (2.9s)
+2026-11-19T21:48:18.7270656Z Registered test user @user_cedd8534aa9b8886ebf2-b8d9b0ae843776edc20a:localhost with displayname Alice
+2026-11-19T21:48:20.5385789Z getBot: Create bot user bot_0018 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:48:21.6117416Z   ✓   15 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:167:9 › Room list sections › Show people section setting › merges the direct messages back into the Chats section when disabled (3.0s)
+2026-11-19T21:48:21.7274680Z Registered test user @user_cedd8534aa9b8886ebf2-d8bc576b78ca17a6e067:localhost with displayname Alice
+2026-11-19T21:48:23.5307845Z getBot: Create bot user bot_0021 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:48:27.0310757Z   ✓   16 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:185:9 › Room list sections › Show people section setting › only accepts direct messages in the People section (5.4s)
+2026-11-19T21:48:27.2079004Z Registered test user @user_cedd8534aa9b8886ebf2-c1f7090378a670b01cf9:localhost with displayname Alice
+2026-11-19T21:48:28.9872148Z getBot: Create bot user bot_0024 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:48:30.8983974Z   ✓   17 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:203:9 › Room list sections › Show people section setting › can move the People section below the Rooms section (3.9s)
+2026-11-19T21:48:31.0689082Z Registered test user @user_cedd8534aa9b8886ebf2-12bca811e8e8fb362476:localhost with displayname Alice
+2026-11-19T21:48:33.5614927Z   ✓   18 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:227:9 › Room list sections › Filters when sections are disabled › shows the Favourites and Low Priority filters and filters the flat list (2.6s)
+2026-11-19T21:48:33.6886830Z Registered test user @user_cedd8534aa9b8886ebf2-c3ada1e088341935395d:localhost with displayname Alice
+2026-11-19T21:48:35.7734380Z   ✓   19 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:260:13 › Room list sections › Section collapse and expand › should collapse and expand the Favourites section (2.2s)
+2026-11-19T21:48:35.9172658Z Registered test user @user_cedd8534aa9b8886ebf2-8b4594f6d83b19b696b3:localhost with displayname Alice
+2026-11-19T21:48:38.1288367Z   ✓   20 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:260:13 › Room list sections › Section collapse and expand › should collapse and expand the Low Priority section (2.3s)
+2026-11-19T21:48:38.2582023Z Registered test user @user_cedd8534aa9b8886ebf2-89d5c6f94af6e0b239dc:localhost with displayname Alice
+2026-11-19T21:48:40.4347469Z   ✓   21 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:294:9 › Room list sections › Section collapse and expand › should render collapsed section @screenshot (2.3s)
+2026-11-19T21:48:40.5755653Z Registered test user @user_cedd8534aa9b8886ebf2-7c972056ce678511bcea:localhost with displayname Alice
+2026-11-19T21:48:48.5957188Z   ✓   22 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:326:9 › Room list sections › Section collapse state persistence › persists the collapsed/expanded state across reloads (8.1s)
+2026-11-19T21:48:48.7347433Z Registered test user @user_cedd8534aa9b8886ebf2-d78c884e237f71b95dd7:localhost with displayname Alice
+2026-11-19T21:48:52.0769562Z   ✓   23 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:373:9 › Room list sections › Rooms placement in sections › should move a room between sections when tags change (3.5s)
+2026-11-19T21:48:52.2077507Z Registered test user @user_cedd8534aa9b8886ebf2-a9dd68b39fe1f8051291:localhost with displayname Alice
+2026-11-19T21:48:55.0530243Z   ✓   24 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:407:9 › Room list sections › Rooms placement in sections › should move a room from Rooms to Favourites when using dnd (3.0s)
+2026-11-19T21:48:55.1765735Z Registered test user @user_cedd8534aa9b8886ebf2-9a506265a0958f7637df:localhost with displayname Alice
+2026-11-19T21:48:58.1956246Z   ✓   25 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:419:9 › Room list sections › Rooms placement in sections › should move a room from Favourites to Rooms when using dnd (3.1s)
+2026-11-19T21:48:58.3182295Z Registered test user @user_cedd8534aa9b8886ebf2-4ff9115c1ecd40e5a784:localhost with displayname Alice
+2026-11-19T21:48:59.9566901Z getBot: Create bot user bot_0035 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:49:00.6754025Z   ✓   26 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:447:9 › Room list sections › Invites section › should show invited rooms in a pinned Invites section (2.5s)
+2026-11-19T21:49:00.8068836Z Registered test user @user_cedd8534aa9b8886ebf2-e738824c097885946146:localhost with displayname Alice
+2026-11-19T21:49:02.4153003Z getBot: Create bot user bot_0038 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:49:03.2383184Z   ✓   27 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:462:9 › Room list sections › Invites section › should start collapsed and report the number of invitations (2.6s)
+2026-11-19T21:49:03.3588262Z Registered test user @user_cedd8534aa9b8886ebf2-94b670c17fce17ead260:localhost with displayname Alice
+2026-11-19T21:49:04.9763324Z getBot: Create bot user bot_0041 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:49:09.1550779Z   ✓   28 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:491:9 › Room list sections › Invites section › should be collapsed again after a reload (5.9s)
+2026-11-19T21:49:09.2811286Z Registered test user @user_cedd8534aa9b8886ebf2-2f359de2968b81b25a80:localhost with displayname Alice
+2026-11-19T21:49:10.8849458Z getBot: Create bot user bot_0044 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:49:11.9447644Z   ✓   29 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:511:9 › Room list sections › Invites section › should be collapsed when the section reappears (2.8s)
+2026-11-19T21:49:12.0602204Z Registered test user @user_cedd8534aa9b8886ebf2-c55caabe2c8f635de758:localhost with displayname Alice
+2026-11-19T21:49:13.5969465Z getBot: Create bot user bot_0047 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:49:14.0968797Z   ✓   30 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:534:9 › Room list sections › Invites section › should not offer to edit or remove the Invites section (2.1s)
+2026-11-19T21:49:14.1922122Z Registered test user @user_cedd8534aa9b8886ebf2-9e6d7d9498a69527679e:localhost with displayname Alice
+2026-11-19T21:49:15.7146631Z getBot: Create bot user bot_0050 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:49:16.3627727Z   ✓   31 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:543:9 › Room list sections › Invites section › should not offer the section entries in an invited room's context menu (2.3s)
+2026-11-19T21:49:16.4773131Z Registered test user @user_cedd8534aa9b8886ebf2-d763176f0faf2a8e42c6:localhost with displayname Alice
+2026-11-19T21:49:18.0253125Z getBot: Create bot user bot_0053 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:49:18.7900213Z   ✓   32 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:560:9 › Room list sections › Invites section › should hide the section once the invitation is accepted (2.4s)
+2026-11-19T21:49:18.9285884Z Registered test user @user_cedd8534aa9b8886ebf2-655d030265078d7279c5:localhost with displayname Alice
+2026-11-19T21:49:20.4614925Z getBot: Create bot user bot_0056 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:49:21.8013170Z   ✓   33 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:576:9 › Room list sections › Invites section › should not let a room be dragged into the Invites section (3.0s)
+2026-11-19T21:49:21.9085789Z Registered test user @user_cedd8534aa9b8886ebf2-76fa4f2f9597ee9615c3:localhost with displayname Alice
+2026-11-19T21:49:23.3544805Z getBot: Create bot user bot_0059 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:49:24.4893341Z   ✓   34 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:588:9 › Room list sections › Invites section › should not let an invited room be dragged out of the Invites section (2.7s)
+2026-11-19T21:49:24.6087264Z Registered test user @user_cedd8534aa9b8886ebf2-6f9a64b993f7189303ef:localhost with displayname Alice
+2026-11-19T21:49:26.1805446Z getBot: Create bot user bot_0062 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:49:27.0675242Z   ✓   35 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:610:9 › Room list sections › Section header notification › should show unread indicator on section header (2.6s)
+2026-11-19T21:49:27.1996763Z Registered test user @user_cedd8534aa9b8886ebf2-439324665f4f77c75402:localhost with displayname Alice
+2026-11-19T21:49:28.7396894Z getBot: Create bot user bot_0065 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:49:29.9965859Z   ✓   36 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:635:9 › Room list sections › Section header notification › should aggregate notification decorations on the collapsed section header @screenshot (2.9s)
+2026-11-19T21:49:30.1417943Z Registered test user @user_cedd8534aa9b8886ebf2-f282a47abfd2800d0603:localhost with displayname Alice
+2026-11-19T21:49:31.8157259Z   ✓   37 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:691:9 › Room list sections › Sections and filters interaction › should not show Favourite, Low Priority and Invites filters when sections are enabled (1.8s)
+2026-11-19T21:49:31.9176134Z Registered test user @user_cedd8534aa9b8886ebf2-f11c760255f2b5e51968:localhost with displayname Alice
+2026-11-19T21:49:33.4229623Z getBot: Create bot user bot_0069 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:49:34.3957804Z   ✓   38 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:711:9 › Room list sections › Sections and filters interaction › should maintain sections when a filter is applied (2.6s)
+2026-11-19T21:49:34.4982632Z Registered test user @user_cedd8534aa9b8886ebf2-f76903a935245e49e96f:localhost with displayname Alice
+2026-11-19T21:49:36.3765096Z   ✓   39 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:755:9 › Room list sections › Section keyboard navigation › Arrow Down/Up move focus through sections and rooms (2.0s)
+2026-11-19T21:49:36.4899438Z Registered test user @user_cedd8534aa9b8886ebf2-0bc96aae6f5c28108ac8:localhost with displayname Alice
+2026-11-19T21:49:38.3287135Z   ✓   40 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:786:9 › Room list sections › Section keyboard navigation › Arrow Right expands a collapsed section (1.9s)
+2026-11-19T21:49:38.4349685Z Registered test user @user_cedd8534aa9b8886ebf2-5d12c744f880c808e11f:localhost with displayname Alice
+2026-11-19T21:49:40.2853710Z   ✓   41 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:802:9 › Room list sections › Section keyboard navigation › Arrow Right is a no-op on an already-expanded section (1.9s)
+2026-11-19T21:49:40.4003607Z Registered test user @user_cedd8534aa9b8886ebf2-dff60f7dd53e59277810:localhost with displayname Alice
+2026-11-19T21:49:42.2398930Z   ✓   42 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:812:9 › Room list sections › Section keyboard navigation › Arrow Left collapses an expanded section (1.9s)
+2026-11-19T21:49:42.3480647Z Registered test user @user_cedd8534aa9b8886ebf2-6d7ddddc70ed59bee056:localhost with displayname Alice
+2026-11-19T21:49:44.1990763Z   ✓   43 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:826:9 › Room list sections › Section keyboard navigation › Arrow Left is a no-op on an already-collapsed section (1.9s)
+2026-11-19T21:49:44.3070198Z Registered test user @user_cedd8534aa9b8886ebf2-e73922aa29a0dfa7cfa4:localhost with displayname Alice
+2026-11-19T21:49:46.1495425Z   ✓   44 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:838:9 › Room list sections › Section keyboard navigation › Arrow Right on an expanded section with rooms moves focus to its first room (1.9s)
+2026-11-19T21:49:46.2552742Z Registered test user @user_cedd8534aa9b8886ebf2-da08857a11e7dc04d291:localhost with displayname Alice
+2026-11-19T21:49:47.9168701Z   ✓   45 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-sections.spec.ts:855:9 › Room list sections › Section keyboard navigation › Arrow Left on the first room of a section moves focus back to the section header (1.8s)
+2026-11-19T21:49:48.0290618Z Registered test user @user_3c7504e2b48c0e6d1e9e-993b0099995a8ca43bd4:localhost with displayname Alice
+2026-11-19T21:49:49.5013733Z getBot: Create bot user bot_0079 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:49:52.6859441Z   ✓   46 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-unread-toast.spec.ts:39:9 › Room list unread activity toast › flat list › shows a toast for a notifying room below the fold and scrolls to it on click (4.8s)
+2026-11-19T21:49:52.7793591Z Registered test user @user_3c7504e2b48c0e6d1e9e-316b5772d9ce9b6a21dc:localhost with displayname Alice
+2026-11-19T21:49:54.1869035Z getBot: Create bot user bot_0082 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:49:58.7428664Z   ✓   47 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-unread-toast.spec.ts:73:9 › Room list unread activity toast › flat list › does not show a toast when the only unread room below the fold has an activity dot (6.0s)
+2026-11-19T21:49:58.8502043Z Registered test user @user_3c7504e2b48c0e6d1e9e-69281564afbf57d767e3:localhost with displayname Alice
+2026-11-19T21:50:00.4290326Z getBot: Create bot user bot_0085 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:50:04.0530245Z   ✓   48 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list-unread-toast.spec.ts:129:9 › Room list unread activity toast › sections › shows a toast for a collapsed section that hides a notifying room (5.3s)
+2026-11-19T21:50:04.1659412Z Registered test user @user_8b1b9650ba2172c59407-2f0bfb667ae8103d0a40:localhost with displayname Alice
+2026-11-19T21:50:12.4269669Z   ✓   49 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:46:9 › Room list › Room list › should render the room list @screenshot (8.3s)
+2026-11-19T21:50:12.5545132Z Registered test user @user_8b1b9650ba2172c59407-fd280c55390034d97686:localhost with displayname Alice
+2026-11-19T21:50:17.8779806Z   ✓   50 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:63:9 › Room list › Room list › should open the room when it is clicked (5.4s)
+2026-11-19T21:50:18.0000445Z Registered test user @user_8b1b9650ba2172c59407-b9e518baddce9c424bf1:localhost with displayname Alice
+2026-11-19T21:50:23.9546873Z   ✓   51 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:69:9 › Room list › Room list › should open the context menu @screenshot (6.1s)
+2026-11-19T21:50:24.0876467Z Registered test user @user_8b1b9650ba2172c59407-9cbc8cb6f413f74d5283:localhost with displayname Alice
+2026-11-19T21:50:31.5488053Z   ✓   52 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:75:9 › Room list › Room list › should open the more options menu @screenshot (7.6s)
+2026-11-19T21:50:31.6899314Z Registered test user @user_8b1b9650ba2172c59407-c0d328a2c0d541a1a76b:localhost with displayname Alice
+2026-11-19T21:50:38.1115303Z   ✓   53 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:106:9 › Room list › Room list › should open the notification options menu @screenshot (6.5s)
+2026-11-19T21:50:38.2233386Z Registered test user @user_8b1b9650ba2172c59407-61658363c83b3d3cab51:localhost with displayname Alice
+2026-11-19T21:50:45.0369438Z   ✓   54 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:149:9 › Room list › Room list › should scroll to the current room (6.9s)
+2026-11-19T21:50:45.1554056Z Registered test user @user_8b1b9650ba2172c59407-9cc38b86f21cacb2aa54:localhost with displayname Alice
+2026-11-19T21:50:51.9645290Z   ✓   55 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:168:13 › Room list › Room list › Shortcuts › should select the next room (6.9s)
+2026-11-19T21:50:52.1219147Z Registered test user @user_8b1b9650ba2172c59407-96a2e2baf542194a766d:localhost with displayname Alice
+2026-11-19T21:50:59.3506645Z   ✓   56 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:176:13 › Room list › Room list › Shortcuts › should select the previous room (7.4s)
+2026-11-19T21:50:59.5029104Z Registered test user @user_8b1b9650ba2172c59407-ae1a5350c3142fbe4aab:localhost with displayname Alice
+2026-11-19T21:51:05.9647911Z   ✓   57 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:184:13 › Room list › Room list › Shortcuts › should select the last room (6.6s)
+2026-11-19T21:51:06.1010782Z Registered test user @user_8b1b9650ba2172c59407-cf0598f5b0766baddc8f:localhost with displayname Alice
+2026-11-19T21:51:11.9851267Z getBot: Create bot user bot_0097 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:51:13.0716730Z   ✓   58 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:192:13 › Room list › Room list › Shortcuts › should select the next unread room (7.1s)
+2026-11-19T21:51:13.1933667Z Registered test user @user_8b1b9650ba2172c59407-cc77b027372b8c2f9b61:localhost with displayname Alice
+2026-11-19T21:51:19.2257524Z   ✓   59 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:215:13 › Room list › Room list › Keyboard navigation › should navigate to the room list (6.1s)
+2026-11-19T21:51:19.3363675Z Registered test user @user_8b1b9650ba2172c59407-351a9cb2ad6344a24ea3:localhost with displayname Alice
+2026-11-19T21:51:24.7889801Z   ✓   60 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:236:13 › Room list › Room list › Keyboard navigation › should navigate to the notification menu (5.6s)
+2026-11-19T21:51:24.9177460Z Registered test user @user_8b1b9650ba2172c59407-9091e97779e16ca6e65f:localhost with displayname Alice
+2026-11-19T21:51:30.2856421Z   ✓   61 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:264:13 › Room list › Room list › Keyboard navigation › should reveal the options menu when a room is focused with the keyboard (5.5s)
+2026-11-19T21:51:30.3967184Z Registered test user @user_8b1b9650ba2172c59407-72b8b8024346b855dc82:localhost with displayname Alice
+2026-11-19T21:51:36.2870165Z   ✓   62 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:298:13 › Room list › Room list › Keyboard navigation › should navigate to the top and then bottom of the room list (6.0s)
+2026-11-19T21:51:36.4303472Z Registered test user @user_8b1b9650ba2172c59407-175915b3c01223aa9e10:localhost with displayname Alice
+2026-11-19T21:51:38.5643301Z   ✓   63 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:323:9 › Room list › Avatar decoration › should be a public room @screenshot (2.2s)
+2026-11-19T21:51:38.7202444Z Registered test user @user_8b1b9650ba2172c59407-e6ff6bdfc25ceffa0b5f:localhost with displayname Alice
+2026-11-19T21:51:41.2958829Z   ✓   64 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:337:9 › Room list › Avatar decoration › should be a low priority room @screenshot (2.7s)
+2026-11-19T21:51:41.4519523Z Registered test user @user_8b1b9650ba2172c59407-e986dcba6d74c130ae10:localhost with displayname Alice
+2026-11-19T21:51:45.0553915Z   ✓   65 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:358:9 › Room list › Avatar decoration › should be a video room @screenshot (3.7s)
+2026-11-19T21:51:45.2021288Z Registered test user @user_8b1b9650ba2172c59407-051f75e936c5b31db913:localhost with displayname Alice
+2026-11-19T21:51:47.0056742Z getBot: Create bot user bot_0107 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:51:48.0964842Z   ✓   66 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:387:9 › Room list › Preview room › should show a peeked room while it is open (3.0s)
+2026-11-19T21:51:48.2536078Z Registered test user @user_8b1b9650ba2172c59407-af7b9e48765e2a237ce0:localhost with displayname Alice
+2026-11-19T21:51:50.0661240Z getBot: Create bot user bot_0110 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:51:52.3785593Z   ✓   67 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:414:9 › Room list › Preview room › should show a previewed room below the fold (4.3s)
+2026-11-19T21:51:52.5147124Z Registered test user @user_8b1b9650ba2172c59407-34d1fd8494c1c670aaf1:localhost with displayname Alice
+2026-11-19T21:51:54.2098960Z getBot: Create bot user bot_0113 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:51:54.9692016Z   ✓   68 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:439:9 › Room list › Notification decoration › should render the invitation decoration @screenshot (2.6s)
+2026-11-19T21:51:55.0965981Z Registered test user @user_8b1b9650ba2172c59407-dc077a6eb7817c7abc1d:localhost with displayname Alice
+2026-11-19T21:51:56.7732162Z getBot: Create bot user bot_0116 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:51:57.6325671Z   ✓   69 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:458:9 › Room list › Notification decoration › should render the regular decoration @screenshot (2.7s)
+2026-11-19T21:51:57.7627516Z Registered test user @user_8b1b9650ba2172c59407-88c0837547920ac2bdb8:localhost with displayname Alice
+2026-11-19T21:51:59.5513635Z getBot: Create bot user bot_0119 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:52:00.3484843Z   ✓   70 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:474:9 › Room list › Notification decoration › should render the mention decoration @screenshot (2.7s)
+2026-11-19T21:52:00.4721331Z Registered test user @user_8b1b9650ba2172c59407-3b5dc4f949c27f0f3f33:localhost with displayname Alice
+2026-11-19T21:52:02.2740260Z getBot: Create bot user bot_0122 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:52:04.0555186Z   ✓   71 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:520:9 › Room list › Notification decoration › should render a message preview when enable in settings @screenshot (3.7s)
+2026-11-19T21:52:04.1964330Z Registered test user @user_8b1b9650ba2172c59407-24607e6bf1241d7da286:localhost with displayname Alice
+2026-11-19T21:52:06.1047806Z getBot: Create bot user bot_0125 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:52:07.2602660Z   ✓   72 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:532:9 › Room list › Notification decoration › should render a message preview when enabled in header @screenshot (3.2s)
+2026-11-19T21:52:07.3903530Z Registered test user @user_8b1b9650ba2172c59407-1c927a1e7ce0c3cae13a:localhost with displayname Alice
+2026-11-19T21:52:09.1637840Z getBot: Create bot user bot_0128 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:52:11.6721310Z   ✓   73 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:543:9 › Room list › Notification decoration › should render an activity decoration @screenshot (4.4s)
+2026-11-19T21:52:11.8118720Z Registered test user @user_8b1b9650ba2172c59407-ee5019dfa0c2bd4c397c:localhost with displayname Alice
+2026-11-19T21:52:13.5560424Z getBot: Create bot user bot_0131 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:52:14.5452952Z   ✓   74 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:572:9 › Room list › Notification decoration › should render a mark as unread decoration @screenshot (2.9s)
+2026-11-19T21:52:14.6742412Z Registered test user @user_8b1b9650ba2172c59407-2b79423a5769371ad457:localhost with displayname Alice
+2026-11-19T21:52:16.3757987Z getBot: Create bot user bot_0134 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:52:17.9076116Z   ✓   75 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:589:9 › Room list › Notification decoration › should render silent decoration @screenshot (3.4s)
+2026-11-19T21:52:18.0734335Z Registered test user @user_8b1b9650ba2172c59407-978ffbef3004c07246ae:localhost with displayname Alice
+2026-11-19T21:52:19.7852613Z getBot: Create bot user bot_0137 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"BotBob"}
+2026-11-19T21:52:21.7082347Z   ✓   76 [Chrome] › playwright/e2e/left-panel/room-list-panel/room-list.spec.ts:623:9 › Room list › Show people in space › should hide and show the DMs of a space when the People preference is toggled (3.8s)
+2026-11-19T21:52:21.8708837Z Registered test user @user_8a514ea0ac0b36fd6c2c-ee5843cb9000df419301:localhost with displayname Alice
+2026-11-19T21:52:25.0605731Z   ✓   77 [Chrome] › playwright/e2e/links/composer-url-preview.spec.ts:33:13 › Composer URL preview › in cider › shows a preview when a URL is typed into the composer (3.3s)
+2026-11-19T21:52:25.2381139Z Registered test user @user_8a514ea0ac0b36fd6c2c-fb3c32784807a3c7ffc4:localhost with displayname Alice
+2026-11-19T21:52:27.5843623Z   ✓   78 [Chrome] › playwright/e2e/links/composer-url-preview.spec.ts:55:13 › Composer URL preview › in cider › does not show a preview when the server returns a 404 (2.5s)
+2026-11-19T21:52:27.7127107Z Registered test user @user_8a514ea0ac0b36fd6c2c-d83abcec886823ed0a22:localhost with displayname Alice
+2026-11-19T21:52:30.9479023Z   ✓   79 [Chrome] › playwright/e2e/links/composer-url-preview.spec.ts:65:13 › Composer URL preview › in cider › shows the second URL's preview if the first has no valid preview (3.4s)
+2026-11-19T21:52:31.0804471Z Registered test user @user_8a514ea0ac0b36fd6c2c-a1892fcd4f96ccabbbf0:localhost with displayname Alice
+2026-11-19T21:52:34.2467369Z   ✓   80 [Chrome] › playwright/e2e/links/composer-url-preview.spec.ts:33:13 › Composer URL preview › in rich text › shows a preview when a URL is typed into the composer (3.3s)
+2026-11-19T21:52:34.4016981Z Registered test user @user_8a514ea0ac0b36fd6c2c-eb31ecf45bd41359d875:localhost with displayname Alice
+2026-11-19T21:52:36.7170914Z   ✓   81 [Chrome] › playwright/e2e/links/composer-url-preview.spec.ts:55:13 › Composer URL preview › in rich text › does not show a preview when the server returns a 404 (2.5s)
+2026-11-19T21:52:36.8628506Z Registered test user @user_8a514ea0ac0b36fd6c2c-f08dac1f40466d522a07:localhost with displayname Alice
+2026-11-19T21:52:40.1902585Z   ✓   82 [Chrome] › playwright/e2e/links/composer-url-preview.spec.ts:65:13 › Composer URL preview › in rich text › shows the second URL's preview if the first has no valid preview (3.5s)
+2026-11-19T21:52:40.3599798Z Registered test user @user_90eddd225a67d394423e-38d06583493bfa1e6734:localhost with displayname Alice
+2026-11-19T21:52:41.8272828Z getBot: Create bot user bot_0146 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:52:42.5569163Z   ✓   83 [Chrome] › playwright/e2e/links/messages.spec.ts:19:9 › Message links › should linkify a regular link 'https://example.org' (2.3s)
+2026-11-19T21:52:42.6797903Z Registered test user @user_90eddd225a67d394423e-f6e1156724eff1b6e332:localhost with displayname Alice
+2026-11-19T21:52:44.1309388Z getBot: Create bot user bot_0149 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:52:44.9048798Z   ✓   84 [Chrome] › playwright/e2e/links/messages.spec.ts:19:9 › Message links › should linkify a regular link 'ftp://example.org' (2.3s)
+2026-11-19T21:52:45.0327886Z Registered test user @user_90eddd225a67d394423e-341e1c06ddd1a19be12b:localhost with displayname Alice
+2026-11-19T21:52:46.4808268Z getBot: Create bot user bot_0152 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:52:47.2689862Z   ✓   85 [Chrome] › playwright/e2e/links/messages.spec.ts:30:5 › Message links › should NOT linkify a bare domain (2.4s)
+2026-11-19T21:52:47.4022397Z Registered test user @user_90eddd225a67d394423e-1a480c9d6cc0bbafd429:localhost with displayname Alice
+2026-11-19T21:52:48.8357866Z getBot: Create bot user bot_0155 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:52:49.6579776Z   ✓   86 [Chrome] › playwright/e2e/links/messages.spec.ts:39:5 › Message links › should linkify a User ID (2.4s)
+2026-11-19T21:52:49.7909482Z Registered test user @user_90eddd225a67d394423e-40577cdbe5ef39fd781c:localhost with displayname Alice
+2026-11-19T21:52:51.1915433Z getBot: Create bot user bot_0158 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:52:51.9077515Z   ✓   87 [Chrome] › playwright/e2e/links/messages.spec.ts:48:5 › Message links › should linkify a Room alias (2.2s)
+2026-11-19T21:52:52.0282034Z Registered test user @user_90eddd225a67d394423e-82a90cfbe63378e206f4:localhost with displayname Alice
+2026-11-19T21:52:53.5386931Z getBot: Create bot user bot_0161 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:52:54.3596271Z   ✓   88 [Chrome] › playwright/e2e/links/messages.spec.ts:57:5 › Message links › should linkify text inside a URL preview (2.4s)
+2026-11-19T21:52:54.5214859Z Registered test user @user_bd6b677fc63e1205d5ce-d8a50378f9872421e7fc:localhost with displayname Alice
+2026-11-19T21:52:55.9336224Z getBot: Create bot user bot_0164 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"Bob"}
+2026-11-19T21:52:56.1419852Z getBot: Create bot user bot_0166 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false,"displayName":"Charlotte"}
+2026-11-19T21:52:58.6101032Z   ✓   89 [Chrome] › playwright/e2e/links/permalinks.spec.ts:28:5 › permalinks › shoud render permalinks as expected @screenshot (4.2s)
+2026-11-19T21:52:58.7595230Z Registered test user @user_bd6b677fc63e1205d5ce-7fffe020cfcf017fe3be:localhost with displayname Alice
+2026-11-19T21:53:00.1858191Z getBot: Create bot user bot_0169 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:53:00.6881411Z   ✓   90 [Chrome] › playwright/e2e/links/permalinks.spec.ts:110:5 › permalinks › should name an unknown room from its summary (2.1s)
+2026-11-19T21:53:00.8204883Z Registered test user @user_bd6b677fc63e1205d5ce-5f0fbc88c32658297977:localhost with displayname Alice
+2026-11-19T21:53:02.2984136Z getBot: Create bot user bot_0172 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:53:03.4999025Z   ✓   91 [Chrome] › playwright/e2e/links/permalinks.spec.ts:130:5 › triple-click message selection › should select entire message line when triple-clicking on message with pills (2.8s)
+2026-11-19T21:53:03.6362128Z Registered test user @user_a262aa5b915a91659365-cfed36bee7ee4c5eb930:localhost with displayname Alice
+2026-11-19T21:53:05.0859935Z getBot: Create bot user bot_0175 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:53:05.8801106Z   ✓   92 [Chrome] › playwright/e2e/links/topic.spec.ts:20:9 › Topic links › should linkify plaintext 'https://example.org' (2.4s)
+2026-11-19T21:53:06.0056520Z Registered test user @user_a262aa5b915a91659365-4149bb0280147f8abaef:localhost with displayname Alice
+2026-11-19T21:53:07.3612070Z getBot: Create bot user bot_0178 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:53:08.1923059Z   ✓   93 [Chrome] › playwright/e2e/links/topic.spec.ts:20:9 › Topic links › should linkify plaintext 'ftp://example.org' (2.3s)
+2026-11-19T21:53:08.3043447Z Registered test user @user_a262aa5b915a91659365-92a9075b3f2de256a1e5:localhost with displayname Alice
+2026-11-19T21:53:09.7590549Z getBot: Create bot user bot_0181 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:53:10.5758292Z   ✓   94 [Chrome] › playwright/e2e/links/topic.spec.ts:20:9 › Topic links › should linkify plaintext '#aroom:example.org' (2.4s)
+2026-11-19T21:53:10.6961825Z Registered test user @user_a262aa5b915a91659365-111da95fc54e23e00551:localhost with displayname Alice
+2026-11-19T21:53:12.1217196Z getBot: Create bot user bot_0184 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:53:12.9277884Z   ✓   95 [Chrome] › playwright/e2e/links/topic.spec.ts:20:9 › Topic links › should linkify plaintext '_@alice:example.org' (2.3s)
+2026-11-19T21:53:13.0704219Z Registered test user @user_8873c4e19f4909cda708-9825ef8a7f0af04e9495:localhost with displayname Tom
+2026-11-19T21:53:17.5089822Z   ✓   96 [Chrome] › playwright/e2e/location/location.spec.ts:33:5 › Location sharing › sends and displays pin drop location message successfully @no-firefox @screenshot (4.6s)
+2026-11-19T21:53:17.6561282Z Registered test user @user_8873c4e19f4909cda708-07298bf382816208acc2:localhost with displayname Tom
+2026-11-19T21:53:21.7491307Z   ✓   97 [Chrome] › playwright/e2e/location/location.spec.ts:67:5 › Location sharing › is prompted for and can consent to live location sharing @no-firefox @screenshot (4.2s)
+2026-11-19T21:53:28.6078116Z Registered test user @user:localhost with displayname Dave
+2026-11-19T21:53:33.0201123Z   ✓   98 [Chrome] › playwright/e2e/login/login-consent.spec.ts:117:9 › Login › Password login › Loads the welcome page by default; then logs in with an existing account and lands on the home screen (11.2s)
+2026-11-19T21:53:39.8565081Z Registered test user @user:localhost with displayname Dave
+2026-11-19T21:53:42.5039505Z   ✓   99 [Chrome] › playwright/e2e/login/login-consent.spec.ts:163:9 › Login › Password login › Follows the original link after login (9.5s)
+2026-11-19T21:53:48.3602227Z Registered test user @user:localhost with displayname Dave
+2026-11-19T21:53:50.6214092Z   ✓  100 [Chrome] › playwright/e2e/login/login-consent.spec.ts:172:13 › Login › Password login › verification after login › Shows verification prompt after login if signing keys are set up, not skippable by default (8.1s)
+2026-11-19T21:53:57.5329906Z Registered test user @user:localhost with displayname Dave
+2026-11-19T21:54:00.5519559Z   ✓  101 [Chrome] › playwright/e2e/login/login-consent.spec.ts:204:17 › Login › Password login › verification after login › with force_verification off › Shows skippable verification prompt after login if signing keys are set up (9.9s)
+2026-11-19T21:54:06.4835382Z Registered test user @user:localhost with displayname Dave
+2026-11-19T21:54:10.1180825Z   ✓  102 [Chrome] › playwright/e2e/login/login-consent.spec.ts:232:17 › Login › Password login › verification after login › with force_verification off › should not force verification on reload if force_verification is enabled after login (9.5s)
+2026-11-19T21:54:15.9656935Z Registered test user @user:localhost with displayname Dave
+2026-11-19T21:54:15.9671668Z uid @user1234:localhost body {
+2026-11-19T21:54:15.9672401Z   master_key: {
+2026-11-19T21:54:15.9672875Z     keys: {
+2026-11-19T21:54:15.9673594Z       'ed25519:6qCouJsi2j7DzOmpxPTBALpvDTqa8p2mjrQR2P8wEbg': '6qCouJsi2j7DzOmpxPTBALpvDTqa8p2mjrQR2P8wEbg'
+2026-11-19T21:54:15.9674361Z     },
+2026-11-19T21:54:15.9674783Z     signatures: { '@user1234:localhost': [Object] },
+2026-11-19T21:54:15.9675309Z     usage: [ 'master' ],
+2026-11-19T21:54:15.9675769Z     user_id: '@user1234:localhost'
+2026-11-19T21:54:15.9676210Z   },
+2026-11-19T21:54:15.9676595Z   self_signing_key: {
+2026-11-19T21:54:15.9677009Z     keys: {
+2026-11-19T21:54:15.9677736Z       'ed25519:eqzRly4S1GvTA36v48hOKokHMtYBLm02zXRgPHue5/8': 'eqzRly4S1GvTA36v48hOKokHMtYBLm02zXRgPHue5/8'
+2026-11-19T21:54:15.9678498Z     },
+2026-11-19T21:54:15.9678908Z     signatures: { '@user1234:localhost': [Object] },
+2026-11-19T21:54:15.9679417Z     usage: [ 'self_signing' ],
+2026-11-19T21:54:15.9679852Z     user_id: '@user1234:localhost'
+2026-11-19T21:54:15.9680416Z   },
+2026-11-19T21:54:15.9680800Z   user_signing_key: {
+2026-11-19T21:54:15.9681183Z     keys: {
+2026-11-19T21:54:15.9681872Z       'ed25519:h6C7sonjKSSa/VMvmpmFnwMA02H2rKIMSYZ2ddwgJn4': 'h6C7sonjKSSa/VMvmpmFnwMA02H2rKIMSYZ2ddwgJn4'
+2026-11-19T21:54:15.9682742Z     },
+2026-11-19T21:54:15.9683243Z     signatures: { '@user1234:localhost': [Object] },
+2026-11-19T21:54:15.9683934Z     usage: [ 'user_signing' ],
+2026-11-19T21:54:15.9684499Z     user_id: '@user1234:localhost'
+2026-11-19T21:54:15.9685097Z   },
+2026-11-19T21:54:15.9685624Z   auth: {
+2026-11-19T21:54:15.9686065Z     type: 'm.login.password',
+2026-11-19T21:54:15.9686635Z     identifier: { type: 'm.id.user', user: '@user1234:localhost' },
+2026-11-19T21:54:15.9687253Z     password: 'p4s5W0rD'
+2026-11-19T21:54:15.9687682Z   }
+2026-11-19T21:54:15.9688057Z }
+2026-11-19T21:54:18.7329271Z   ✓  103 [Chrome] › playwright/e2e/login/login-consent.spec.ts:293:17 › Login › Password login › verification after login › with force_verification on › Shows unskippable verification prompt after login if signing keys are set up (8.6s)
+2026-11-19T21:54:24.6388177Z Registered test user @user:localhost with displayname Dave
+2026-11-19T21:54:28.4292476Z   ✓  104 [Chrome] › playwright/e2e/login/login-consent.spec.ts:321:17 › Login › Password login › verification after login › with force_verification on › Continues to show verification prompt after cancelling device verification (9.7s)
+2026-11-19T21:54:35.3959220Z Registered test user @user:localhost with displayname Dave
+2026-11-19T21:54:42.2536135Z   ✓  105 [Chrome] › playwright/e2e/login/login-consent.spec.ts:347:13 › Login › Password login › verification after login › Can reset identity to become verified @screenshot (13.8s)
+2026-11-19T21:54:50.4404670Z Registered test user @user:localhost with displayname Dave
+2026-11-19T21:54:58.0076830Z   ✓  106 [Chrome] › playwright/e2e/login/login-consent.spec.ts:404:13 › Login › Password login › verification after login › Reset identity warning is slightly more alarming if we have encrypted chats @screenshot (15.7s)
+2026-11-19T21:55:04.0286730Z Registered test user @user:localhost with displayname Dave
+2026-11-19T21:55:07.1556677Z   ✓  107 [Chrome] › playwright/e2e/login/login-consent.spec.ts:435:13 › Login › Password login › verification after login › Reset identity warning is more alarming if we have other devices @screenshot (9.1s)
+2026-11-19T21:55:12.9646699Z Registered test user @user:localhost with displayname Dave
+2026-11-19T21:55:17.2072591Z   ✓  108 [Chrome] › playwright/e2e/login/login-consent.spec.ts:466:9 › Login › logout › should go to welcome page on logout (10.0s)
+2026-11-19T21:55:17.3285820Z Registered test user @user_8efa2fccd8b5c3f9e367-d96b5bf1cad5c149f42a:localhost with displayname Grace
+2026-11-19T21:55:20.0820366Z   ✓  109 [Chrome] › playwright/e2e/login/login.spec.ts:18:5 › With force_verification: true › Can reload after login (2.9s)
+2026-11-19T21:55:20.0915966Z   -  110 [Chrome] › playwright/e2e/login/overwrite_login.spec.ts:15:10 › Overwrite login action › Try replace existing login with new one
+2026-11-19T21:55:20.2200925Z Registered test user @user_a64b757ea93e42bcc35e-652bff06d9690a479544:localhost with displayname Isaac
+2026-11-19T21:55:25.8277983Z   ✓  111 [Chrome] › playwright/e2e/login/session-restore.spec.ts:31:5 › session restore › should not show the logged-in view until the first sync completes (5.7s)
+2026-11-19T21:55:25.9658812Z Registered test user @user_3b53b4f051ce6ab3d1fc-ed43956e50bd348e41a7:localhost with displayname Alice
+2026-11-19T21:55:27.4422393Z Intercepting request with soft-logged-out access token
+2026-11-19T21:55:27.8867465Z   ✓  112 [Chrome] › playwright/e2e/login/soft_logout.spec.ts:26:5 › Soft logout with password user › shows the soft-logout page when a request fails, and allows a re-login (2.0s)
+2026-11-19T21:55:28.0186227Z Registered test user @user_3b53b4f051ce6ab3d1fc-f00adc72e29c45c7dfdf:localhost with displayname Alice
+2026-11-19T21:55:29.6141924Z Intercepting request with soft-logged-out access token
+2026-11-19T21:55:30.4036032Z   ✓  113 [Chrome] › playwright/e2e/login/soft_logout.spec.ts:37:5 › Soft logout with password user › still shows the soft-logout page when the page is reloaded after a soft-logout (2.5s)
+2026-11-19T21:55:30.5405052Z Registered test user @user_991622f188e843841306-afe3beb6f5071574a7b3:localhost with displayname Quentin
+2026-11-19T21:55:32.7819829Z   ✓  114 [Chrome] › playwright/e2e/messages/messages.spec.ts:96:13 › Message rendering › with ltr display name › should render a basic LTR text message @screenshot @screenshot (2.3s)
+2026-11-19T21:55:32.9197029Z Registered test user @user_991622f188e843841306-db896bd7e1bc0041b70e:localhost with displayname Quentin
+2026-11-19T21:55:35.2182967Z   ✓  115 [Chrome] › playwright/e2e/messages/messages.spec.ts:110:13 › Message rendering › with ltr display name › should render an LTR emote @screenshot (2.4s)
+2026-11-19T21:55:35.3346563Z Registered test user @user_991622f188e843841306-8fab6e56cadb6d459dfe:localhost with displayname Quentin
+2026-11-19T21:55:37.9928670Z   ✓  116 [Chrome] › playwright/e2e/messages/messages.spec.ts:117:13 › Message rendering › with ltr display name › should render an LTR rich text emote @screenshot (2.8s)
+2026-11-19T21:55:38.2033859Z Registered test user @user_991622f188e843841306-70ffbe61fa0783dfdcad:localhost with displayname Quentin
+2026-11-19T21:55:41.6470329Z   ✓  117 [Chrome] › playwright/e2e/messages/messages.spec.ts:127:13 › Message rendering › with ltr display name › should render an edited LTR message @screenshot (3.6s)
+2026-11-19T21:55:41.8175596Z Registered test user @user_991622f188e843841306-1c0e8d8622252b491ae8:localhost with displayname Quentin
+2026-11-19T21:55:44.7033615Z   ✓  118 [Chrome] › playwright/e2e/messages/messages.spec.ts:140:13 › Message rendering › with ltr display name › should render a reply of a LTR message @screenshot (3.0s)
+2026-11-19T21:55:44.8378578Z Registered test user @user_991622f188e843841306-79e1f1d2aed401a02525:localhost with displayname Quentin
+2026-11-19T21:55:47.1146400Z   ✓  119 [Chrome] › playwright/e2e/messages/messages.spec.ts:157:13 › Message rendering › with ltr display name › should render a basic RTL text message @screenshot (2.4s)
+2026-11-19T21:55:47.2519252Z Registered test user @user_991622f188e843841306-277b12120f047fd85209:localhost with displayname Quentin
+2026-11-19T21:55:49.5673159Z   ✓  120 [Chrome] › playwright/e2e/messages/messages.spec.ts:167:13 › Message rendering › with ltr display name › should render an RTL emote @screenshot (2.4s)
+2026-11-19T21:55:49.6905183Z Registered test user @user_991622f188e843841306-6fba740581e212667090:localhost with displayname Quentin
+2026-11-19T21:55:51.9469492Z   ✓  121 [Chrome] › playwright/e2e/messages/messages.spec.ts:174:13 › Message rendering › with ltr display name › should render a richtext RTL emote @screenshot (2.4s)
+2026-11-19T21:55:52.0943559Z Registered test user @user_991622f188e843841306-226613c83fe69c0239e3:localhost with displayname Quentin
+2026-11-19T21:55:54.7835059Z   ✓  122 [Chrome] › playwright/e2e/messages/messages.spec.ts:184:13 › Message rendering › with ltr display name › should render an edited RTL message @screenshot (2.8s)
+2026-11-19T21:55:54.8943871Z Registered test user @user_991622f188e843841306-2f6e98beb6135574c1f1:localhost with displayname Quentin
+2026-11-19T21:55:57.9294375Z   ✓  123 [Chrome] › playwright/e2e/messages/messages.spec.ts:197:13 › Message rendering › with ltr display name › should render a reply of a RTL message @screenshot (3.1s)
+2026-11-19T21:55:58.0637751Z Registered test user @user_991622f188e843841306-9448ba0afe6a10e21e88:localhost with displayname كوينتين
+2026-11-19T21:56:00.3528868Z   ✓  124 [Chrome] › playwright/e2e/messages/messages.spec.ts:96:13 › Message rendering › with rtl display name › should render a basic LTR text message @screenshot @screenshot (2.4s)
+2026-11-19T21:56:00.4648645Z Registered test user @user_991622f188e843841306-4090eaad99eea55ecbad:localhost with displayname كوينتين
+2026-11-19T21:56:02.6834928Z   ✓  125 [Chrome] › playwright/e2e/messages/messages.spec.ts:110:13 › Message rendering › with rtl display name › should render an LTR emote @screenshot (2.3s)
+2026-11-19T21:56:02.8057188Z Registered test user @user_991622f188e843841306-7aafef21f3480722f902:localhost with displayname كوينتين
+2026-11-19T21:56:05.0337268Z   ✓  126 [Chrome] › playwright/e2e/messages/messages.spec.ts:117:13 › Message rendering › with rtl display name › should render an LTR rich text emote @screenshot (2.3s)
+2026-11-19T21:56:05.1521103Z Registered test user @user_991622f188e843841306-971c88cc0d19b50044d3:localhost with displayname كوينتين
+2026-11-19T21:56:07.6588967Z   ✓  127 [Chrome] › playwright/e2e/messages/messages.spec.ts:127:13 › Message rendering › with rtl display name › should render an edited LTR message @screenshot (2.6s)
+2026-11-19T21:56:07.7799706Z Registered test user @user_991622f188e843841306-927c32473cb0ab30ba43:localhost with displayname كوينتين
+2026-11-19T21:56:10.7737944Z   ✓  128 [Chrome] › playwright/e2e/messages/messages.spec.ts:140:13 › Message rendering › with rtl display name › should render a reply of a LTR message @screenshot (3.1s)
+2026-11-19T21:56:10.8787297Z Registered test user @user_991622f188e843841306-7d0e1e9ba2e8f84198a6:localhost with displayname كوينتين
+2026-11-19T21:56:13.1284027Z   ✓  129 [Chrome] › playwright/e2e/messages/messages.spec.ts:157:13 › Message rendering › with rtl display name › should render a basic RTL text message @screenshot (2.3s)
+2026-11-19T21:56:13.2694670Z Registered test user @user_991622f188e843841306-ade9df7371e1a62d4326:localhost with displayname كوينتين
+2026-11-19T21:56:15.5751914Z   ✓  130 [Chrome] › playwright/e2e/messages/messages.spec.ts:167:13 › Message rendering › with rtl display name › should render an RTL emote @screenshot (2.4s)
+2026-11-19T21:56:15.6827016Z Registered test user @user_991622f188e843841306-0d332d4c5e75d1b9febe:localhost with displayname كوينتين
+2026-11-19T21:56:18.0181475Z   ✓  131 [Chrome] › playwright/e2e/messages/messages.spec.ts:174:13 › Message rendering › with rtl display name › should render a richtext RTL emote @screenshot (2.4s)
+2026-11-19T21:56:18.1414198Z Registered test user @user_991622f188e843841306-3216f925fe576c1bd867:localhost with displayname كوينتين
+2026-11-19T21:56:20.8460013Z   ✓  132 [Chrome] › playwright/e2e/messages/messages.spec.ts:184:13 › Message rendering › with rtl display name › should render an edited RTL message @screenshot (2.8s)
+2026-11-19T21:56:20.9605167Z Registered test user @user_991622f188e843841306-5ff93dce2cf4b26f5af3:localhost with displayname كوينتين
+2026-11-19T21:56:23.9681033Z   ✓  133 [Chrome] › playwright/e2e/messages/messages.spec.ts:197:13 › Message rendering › with rtl display name › should render a reply of a RTL message @screenshot (3.1s)
+2026-11-19T21:56:24.0893618Z Registered test user @user_991622f188e843841306-1b6e65cf73ef097a52a3:localhost with displayname Alice
+2026-11-19T21:56:27.4645269Z   ✓  134 [Chrome] › playwright/e2e/messages/messages.spec.ts:226:5 › Message url previews › should render a basic preview @screenshot (3.5s)
+2026-11-19T21:56:27.5853436Z Registered test user @user_991622f188e843841306-4d363171046dc873923a:localhost with displayname Alice
+2026-11-19T21:56:29.0355592Z getBot: Create bot user bot_0214 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:56:31.5442833Z   ✓  135 [Chrome] › playwright/e2e/messages/messages.spec.ts:244:5 › Message url previews › should render a preview with a thumbnail @screenshot (4.1s)
+2026-11-19T21:56:32.4144493Z   ✓  136 [Chrome] › playwright/e2e/mobile-guide/mobile-guide.spec.ts:29:13 › Mobile Guide Screenshots › for variant element-classic › should match the mobile_guide screenshot @screenshot (833ms)
+2026-11-19T21:56:33.2338429Z   ✓  137 [Chrome] › playwright/e2e/mobile-guide/mobile-guide.spec.ts:29:13 › Mobile Guide Screenshots › for variant element › should match the mobile_guide screenshot @screenshot (802ms)
+2026-11-19T21:56:34.0637274Z   ✓  138 [Chrome] › playwright/e2e/mobile-guide/mobile-guide.spec.ts:29:13 › Mobile Guide Screenshots › for variant element-pro › should match the mobile_guide screenshot @screenshot (814ms)
+2026-11-19T21:56:34.1860771Z Registered test user @user_fa83c871e313879ba727-bd13393ea2e35c2eb07f:localhost with displayname Manny
+2026-11-19T21:56:35.6024396Z getBot: Create bot user bot_0217 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:56:36.7730369Z   ✓  139 [Chrome] › playwright/e2e/modules/composer.spec.ts:28:5 › Composer API › should be able to select custom uploader (2.7s)
+2026-11-19T21:56:36.8919931Z Registered test user @user_6ed4ccc4fba3ab97a868-6ebd83ee93a7022f8560:localhost with displayname Manny
+2026-11-19T21:56:38.3349216Z getBot: Create bot user bot_0220 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:56:39.1078764Z   ✓  140 [Chrome] › playwright/e2e/modules/custom-component.spec.ts:49:9 › Custom Component API › basic functionality › should replace the render method of a textual event @screenshot (2.3s)
+2026-11-19T21:56:39.2456964Z Registered test user @user_6ed4ccc4fba3ab97a868-c5df0a2c41f4d0a2e0ba:localhost with displayname Manny
+2026-11-19T21:56:40.6687808Z getBot: Create bot user bot_0223 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:56:41.4358798Z   ✓  141 [Chrome] › playwright/e2e/modules/custom-component.spec.ts:61:9 › Custom Component API › basic functionality › should fall through if one module does not render a component @screenshot (2.3s)
+2026-11-19T21:56:41.5881701Z Registered test user @user_6ed4ccc4fba3ab97a868-ddf3e02aea4fb6e714cf:localhost with displayname Manny
+2026-11-19T21:56:43.0399355Z getBot: Create bot user bot_0226 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:56:43.8740042Z   ✓  142 [Chrome] › playwright/e2e/modules/custom-component.spec.ts:73:9 › Custom Component API › basic functionality › should render the original content of a textual event conditionally @screenshot (2.4s)
+2026-11-19T21:56:44.0132308Z Registered test user @user_6ed4ccc4fba3ab97a868-5d6ae9a7b5c2409f8420:localhost with displayname Manny
+2026-11-19T21:56:45.4569456Z getBot: Create bot user bot_0229 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:56:46.1022040Z   ✓  143 [Chrome] › playwright/e2e/modules/custom-component.spec.ts:85:9 › Custom Component API › basic functionality › should disallow editing when the allowEditingEvent hint is set to false (2.2s)
+2026-11-19T21:56:46.2158613Z Registered test user @user_6ed4ccc4fba3ab97a868-cc52ee6ae459144664ec:localhost with displayname Manny
+2026-11-19T21:56:47.5699025Z getBot: Create bot user bot_0232 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:56:48.4484684Z   ✓  144 [Chrome] › playwright/e2e/modules/custom-component.spec.ts:93:9 › Custom Component API › basic functionality › should disallow downloading media when the allowDownloading hint is set to false (2.3s)
+2026-11-19T21:56:48.5614586Z Registered test user @user_6ed4ccc4fba3ab97a868-fdd0ad9a38e419581952:localhost with displayname Manny
+2026-11-19T21:56:49.9413107Z getBot: Create bot user bot_0235 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:56:50.8749407Z   ✓  145 [Chrome] › playwright/e2e/modules/custom-component.spec.ts:119:9 › Custom Component API › basic functionality › should allow downloading media when the allowDownloading hint is set to true (2.4s)
+2026-11-19T21:56:50.9940954Z Registered test user @user_6ed4ccc4fba3ab97a868-f6a7b6398c1cc0bc10c9:localhost with displayname Manny
+2026-11-19T21:56:52.4575366Z getBot: Create bot user bot_0238 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:56:53.1566612Z   ✓  146 [Chrome] › playwright/e2e/modules/custom-component.spec.ts:145:9 › Custom Component API › basic functionality › should hide sender profile when the renderAsInfoMessage hint is set to true (2.3s)
+2026-11-19T21:56:53.2626170Z Registered test user @user_6ed4ccc4fba3ab97a868-1cd33f250b31ea81275d:localhost with displayname Manny
+2026-11-19T21:56:54.6703455Z getBot: Create bot user bot_0241 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:56:55.6377873Z   ✓  147 [Chrome] › playwright/e2e/modules/custom-component.spec.ts:161:9 › Custom Component API › basic functionality › should render formatted informational text at the size of a name-change event @screenshot (2.5s)
+2026-11-19T21:56:55.8053070Z Registered test user @user_6ed4ccc4fba3ab97a868-5555d33a03ce5f3c9453:localhost with displayname Manny
+2026-11-19T21:56:57.2810640Z getBot: Create bot user bot_0244 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:56:58.3386456Z   ✓  148 [Chrome] › playwright/e2e/modules/custom-component.spec.ts:208:9 › Custom Component API › basic functionality › should group custom messages without the informational hint (2.7s)
+2026-11-19T21:56:58.5088868Z Registered test user @user_6ed4ccc4fba3ab97a868-d615ae4afe9f5decfba0:localhost with displayname Manny
+2026-11-19T21:57:00.0327173Z getBot: Create bot user bot_0247 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:57:01.1118188Z   ✓  149 [Chrome] › playwright/e2e/modules/custom-component.spec.ts:225:9 › Custom Component API › basic functionality › should keep informational-only messages outside custom summaries (2.8s)
+2026-11-19T21:57:01.2584842Z Registered test user @user_6ed4ccc4fba3ab97a868-a5f269d0d169a47ce0ff:localhost with displayname Manny
+2026-11-19T21:57:02.6564947Z getBot: Create bot user bot_0250 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:57:03.3300442Z   ✓  150 [Chrome] › playwright/e2e/modules/custom-component.spec.ts:244:9 › Custom Component API › basic functionality › should hide sender profile when the renderSenderProfile hint is set to false (2.2s)
+2026-11-19T21:57:03.4625651Z Registered test user @user_6ed4ccc4fba3ab97a868-0c98e41bbb8e36c90497:localhost with displayname Manny
+2026-11-19T21:57:04.9410438Z getBot: Create bot user bot_0253 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:57:05.7593042Z   ✓  151 [Chrome] › playwright/e2e/modules/custom-component.spec.ts:260:9 › Custom Component API › basic functionality › should render the next registered component if the filter function throws @screenshot (2.4s)
+2026-11-19T21:57:05.8749662Z Registered test user @user_6ed4ccc4fba3ab97a868-2f77d0158c7b3e73c531:localhost with displayname Manny
+2026-11-19T21:57:07.1606623Z getBot: Create bot user bot_0256 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:57:07.8404548Z   ✓  152 [Chrome] › playwright/e2e/modules/custom-component.spec.ts:272:9 › Custom Component API › basic functionality › should render original component if the render function throws @screenshot (2.1s)
+2026-11-19T21:57:07.9322372Z Registered test user @user_a51960423c7c619050f6-fabb4dd5eb2e097125a7:localhost with displayname Manny
+2026-11-19T21:57:10.3714403Z   ✓  153 [Chrome] › playwright/e2e/modules/document-preview.spec.ts:41:5 › Document Preview API › should open a file from a module in the right panel (2.5s)
+2026-11-19T21:57:10.4856961Z Registered test user @user_a51960423c7c619050f6-49a628c59f945c0f5db2:localhost with displayname Manny
+2026-11-19T21:57:12.8727316Z   ✓  154 [Chrome] › playwright/e2e/modules/document-preview.spec.ts:52:5 › Document Preview API › should title the preview generically when the file has no name (2.5s)
+2026-11-19T21:57:12.9829202Z Registered test user @user_a51960423c7c619050f6-93c975bb614718f38767:localhost with displayname Manny
+2026-11-19T21:57:15.2760907Z   ✓  155 [Chrome] › playwright/e2e/modules/document-preview.spec.ts:61:5 › Document Preview API › should show an error when the file cannot be loaded (2.4s)
+2026-11-19T21:57:15.7896159Z   ✓  156 [Chrome] › playwright/e2e/modules/loader.spec.ts:48:17 › Module loading › Example Module › language-en › should show alert (488ms)
+2026-11-19T21:57:16.2766767Z   ✓  157 [Chrome] › playwright/e2e/modules/loader.spec.ts:48:17 › Module loading › Example Module › language-de › should show alert (479ms)
+2026-11-19T21:57:16.7503584Z   ✓  158 [Chrome] › playwright/e2e/modules/settings.spec.ts:28:5 › Settings API › should read a config-resolved setting value via api.settings.getValue (460ms)
+2026-11-19T21:57:16.8473955Z Registered test user @user_a4708afa11eb20eb5d80-5c59bf6a7ccd36a6936e:localhost with displayname Bob
+2026-11-19T21:57:17.7061322Z getBot: Create bot user bot_0262 with opts {"userIdPrefix":"bot_","autoAcceptInvites":true,"startClient":true,"bootstrapCrossSigning":true,"usePassphrase":false}
+2026-11-19T21:57:18.0530899Z   ✓  159 [Chrome] › playwright/e2e/modules/to-device.spec.ts:15:5 › to-device Module API › sends and receives messages between two Matrix clients (1.3s)
+2026-11-19T21:57:18.1427336Z Registered test user @user_79b1125fc9e9af4577e2-d7625afaeaa72d8f3e94:localhost with displayname Manny
+2026-11-19T21:57:19.8196673Z   ✓  160 [Chrome] › playwright/e2e/modules/url-preview.spec.ts:53:9 › URL Preview API › in the timeline › should preview a URL handled by a module (1.8s)
+2026-11-19T21:57:19.9125220Z Registered test user @user_79b1125fc9e9af4577e2-31252a5407f1dba2ce1e:localhost with displayname Manny
+2026-11-19T21:57:21.5100942Z   ✓  161 [Chrome] › playwright/e2e/modules/url-preview.spec.ts:64:9 › URL Preview API › in the timeline › should pass the event being previewed to the handler (1.7s)
+2026-11-19T21:57:21.6156499Z Registered test user @user_79b1125fc9e9af4577e2-45caf6ae49a321d7fdd7:localhost with displayname Manny
+2026-11-19T21:57:23.3666118Z   ✓  162 [Chrome] › playwright/e2e/modules/url-preview.spec.ts:74:9 › URL Preview API › in the timeline › should fall back to the homeserver when no handler matches (1.8s)
+2026-11-19T21:57:23.4758964Z Registered test user @user_79b1125fc9e9af4577e2-6535aff2d247d915dedb:localhost with displayname Manny
+2026-11-19T21:57:25.1435065Z   ✓  163 [Chrome] › playwright/e2e/modules/url-preview.spec.ts:84:9 › URL Preview API › in the timeline › should fall back to the homeserver when the matching handler returns no preview (1.8s)
+2026-11-19T21:57:25.2513411Z Registered test user @user_79b1125fc9e9af4577e2-ab1c248f30ccb77b27aa:localhost with displayname Manny
+2026-11-19T21:57:26.9237469Z   ✓  164 [Chrome] › playwright/e2e/modules/url-preview.spec.ts:99:9 › URL Preview API › in the timeline › should only use the first handler that matches (1.8s)
+2026-11-19T21:57:27.0515910Z Registered test user @user_79b1125fc9e9af4577e2-6a898a609dbb3f4e5d0e:localhost with displayname Manny
+2026-11-19T21:57:28.9419596Z   ✓  165 [Chrome] › playwright/e2e/modules/url-preview.spec.ts:115:9 › URL Preview API › with bundled previews › should preview a bundled URL with the module handler (2.0s)
+2026-11-19T21:57:29.0809381Z Registered test user @user_79b1125fc9e9af4577e2-1dba803f3f5f2505f06d:localhost with displayname Manny
+2026-11-19T21:57:32.0076272Z   ✓  166 [Chrome] › playwright/e2e/modules/url-preview.spec.ts:139:9 › URL Preview API › in the composer › should preview a URL handled by a module, without an event (3.0s)
+2026-11-19T21:57:32.9454740Z 
+2026-11-19T21:57:32.9460929Z   1 skipped
+2026-11-19T21:57:32.9461303Z   165 passed (10.3m)
+2026-11-19T21:57:33.0467874Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-11-19T21:57:33.0468430Z with:
+2026-11-19T21:57:33.0468772Z   name: results-blacksmith-4-2
+2026-11-19T21:57:33.0469102Z   path: apps/web/results.json
+2026-11-19T21:57:33.0469429Z   retention-days: 30
+2026-11-19T21:57:33.0469709Z   if-no-files-found: warn
+2026-11-19T21:57:33.0470094Z   compression-level: 6
+2026-11-19T21:57:33.0470395Z   overwrite: false
+2026-11-19T21:57:33.0470691Z   include-hidden-files: false
+2026-11-19T21:57:33.0470989Z   archive: true
+2026-11-19T21:57:33.0471153Z env:
+2026-11-19T21:57:33.0471454Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-19T21:57:33.0471701Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 341
+2026-11-19T21:57:33.0471928Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 955
+2026-11-19T21:57:33.0472164Z   GITHUB_REPO_NAME: BluebagAI/bench-element-web
+2026-11-19T21:57:33.0472519Z   PNPM_HOME: /home/runner/setup-pnpm
+2026-11-19T21:57:33.0472803Z   PNPM_CONFIG_GLOBAL_SHIMS: {"node":false}
+2026-11-19T21:57:33.0473009Z ##[endgroup]
+2026-11-19T21:57:33.2166529Z With the provided path, there will be 1 file uploaded
+2026-11-19T21:57:33.2169165Z Artifact name is valid!
+2026-11-19T21:57:33.2169632Z Root directory input is valid!
+2026-11-19T21:57:33.5953741Z Uploading artifact: results-blacksmith-4-2.zip
+2026-11-19T21:57:33.5954401Z Beginning upload of artifact content to blob storage
+2026-11-19T21:57:34.1714722Z Uploaded bytes 537312
+2026-11-19T21:57:34.2368697Z Finished uploading artifact content to blob storage!
+2026-11-19T21:57:34.2369403Z SHA256 digest of uploaded artifact is 74dfe665deb40832e75901ea70629233d5590f7ad7e6913bb598b61194ee0605
+2026-11-19T21:57:34.2369804Z Finalizing artifact upload
+2026-11-19T21:57:34.7632778Z Artifact results-blacksmith-4-2 successfully finalized. Artifact ID 14578691946
+2026-11-19T21:57:34.7633776Z Artifact results-blacksmith-4-2 has been successfully uploaded! Final size is 537312 bytes. Artifact ID is 14578691946
+2026-11-19T21:57:34.7637918Z Artifact download URL: https://github.com/BluebagAI/bench-element-web/actions/runs/44621875197/artifacts/14578691946
+2026-11-19T21:57:34.7830925Z Post job cleanup.
+2026-11-19T21:57:34.7852611Z ##[start-action display=Cache playwright binaries;id=__270041a1-3910-4b32-a8c9-07a732cd7ccb.cache]
+2026-11-19T21:57:34.7898421Z Post job cleanup.
+2026-11-19T21:57:34.9060995Z Cache hit occurred on the primary key Linux-X64-playwright-1.65.1, not saving cache.
+2026-11-19T21:57:34.9126266Z ##[end-action id=__270041a1-3910-4b32-a8c9-07a732cd7ccb.cache;outcome=success;conclusion=success;duration_ms=127]
+2026-11-19T21:57:34.9189716Z Post job cleanup.
+2026-11-19T21:57:35.0659341Z The store has not been written to since it was restored, not saving cache.
+2026-11-19T21:57:35.0825175Z Post job cleanup.
+2026-11-19T21:57:35.1660013Z [command]/usr/local/bin/git version
+2026-11-19T21:57:35.1726995Z git version 2.55.0
+2026-11-19T21:57:35.1833264Z Temporarily overriding HOME='/home/runner/_work/_temp/51b0e973-5785-415e-b79f-5cca3c9d212a' before making global git config changes
+2026-11-19T21:57:35.1834114Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T21:57:35.1834675Z [command]/usr/local/bin/git config --global --add safe.directory /home/runner/_work/bench-element-web/bench-element-web
+2026-11-19T21:57:35.1903150Z Removing SSH command configuration
+2026-11-19T21:57:35.1915110Z [command]/usr/local/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T21:57:35.1926979Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T21:57:35.2141807Z Removing HTTP extra header
+2026-11-19T21:57:35.2148556Z [command]/usr/local/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T21:57:35.2198408Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T21:57:35.2391119Z Removing includeIf entries pointing to credentials config files
+2026-11-19T21:57:35.2400254Z [command]/usr/local/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T21:57:35.2450320Z [command]/usr/local/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T21:57:35.2727130Z A job completed hook has been configured by the self-hosted runner administrator
+2026-11-19T21:57:35.2844558Z ##[group]Run '/job_completed.sh'
+2026-11-19T21:57:35.2876228Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T21:57:35.2876693Z env:
+2026-11-19T21:57:35.2876993Z   BLACKSMITH_RUNNER_MESSAGE_WAIT_MS: 341
+2026-11-19T21:57:35.2877381Z   BLACKSMITH_RUNNER_ACQUIRE_JOB_MS: 955
+2026-11-19T21:57:35.2877750Z   BLACKSMITH_CHECK_RUN_ID: 135906264742
+2026-11-19T21:57:35.2878233Z   BLACKSMITH_JOB_DISPLAY_NAME: Run Tests [Chrome] 2/4 (blacksmith-4)
+2026-11-19T21:57:35.2878729Z   GITHUB_ACTIONS_CACHE_MODE: write
+2026-11-19T21:57:35.2879093Z ##[endgroup]
+2026-11-19T21:57:35.3078022Z 
+2026-11-19T21:57:35.3078774Z Cleaning up Docker resources before commit...
+2026-11-19T21:57:35.3483525Z Stopping 1 running container(s)...
+2026-11-19T21:57:35.6108707Z Stopped 1 container(s) in 261ms
+2026-11-19T21:57:35.9788907Z Docker cleanup phases:
+2026-11-19T21:57:35.9789615Z   containers      314ms
+2026-11-19T21:57:35.9790048Z   networks         19ms
+2026-11-19T21:57:35.9790286Z   volumes          15ms
+2026-11-19T21:57:35.9790486Z   builder         249ms
+2026-11-19T21:57:35.9790680Z   image_scan       71ms
+2026-11-19T21:57:35.9791869Z Docker cleanup complete: 1 container(s), 0 network(s), 0 volume(s), 0 image(s) removed
+2026-11-19T21:57:35.9792446Z 
+2026-11-19T21:57:35.9826559Z Docker container cache activated, computing hash...
+2026-11-19T21:57:36.0036990Z [docker-manifest] Image manifest: 27 image(s), 23178903794 bytes working set, 0 bytes evicted, 0 bytes reclaimable (deferred)
+2026-11-19T21:57:36.0124827Z Docker image hash computed:
+2026-11-19T21:57:36.0125409Z   current  af27d4a9160458d3992e82dfb4a964fc4ffb353d4d6e314e4a5402a60a40d400
+2026-11-19T21:57:36.0125868Z   stored   11d670d0ce4e32154c8b2c420b1dc6d0dbe82eb80435a7da8f2f7ce535151ffa
+2026-11-19T21:57:36.0126204Z Docker images to be cached:
+2026-11-19T21:57:36.0302057Z REPOSITORY                                                TAG             SIZE
+2026-11-19T21:57:36.0304372Z fcc-api                                                   latest          1.47GB
+2026-11-19T21:57:36.0305132Z wp-env-bench-gutenberg-test-c16a8885-wordpress            latest          872MB
+2026-11-19T21:57:36.0305952Z wp-env-bench-gutenberg-test-c16a8885-cli                  latest          564MB
+2026-11-19T21:57:36.0306757Z wp-env-env-1-b01ca7e3-wordpress                           latest          872MB
+2026-11-19T21:57:36.0307540Z wp-env-env-2-e775f50d-wordpress                           latest          872MB
+2026-11-19T21:57:36.0308314Z wp-env-env-2-e775f50d-cli                                 latest          564MB
+2026-11-19T21:57:36.0308979Z wp-env-env-1-b01ca7e3-cli                                 latest          564MB
+2026-11-19T21:57:36.0309642Z postgres                                                  16-alpine       295MB
+2026-11-19T21:57:36.0310321Z postgres                                                  18              474MB
+2026-11-19T21:57:36.0311048Z ghcr.io/gvenzl/oracle-free                                23              2.85GB
+2026-11-19T21:57:36.0311768Z axllent/mailpit                                           latest          36.3MB
+2026-11-19T21:57:36.0312749Z blacksmith-container-caching                              18bbf38ffc58    333MB
+2026-11-19T21:57:36.0313468Z ghcr.io/element-hq/synapse                                <none>          333MB
+2026-11-19T21:57:36.0314085Z postgres                                                  16              468MB
+2026-11-19T21:57:36.0314629Z postgres                                                  <none>          474MB
+2026-11-19T21:57:36.0315145Z mariadb                                                   12.3            341MB
+2026-11-19T21:57:36.0315652Z mariadb                                                   lts             341MB
+2026-11-19T21:57:36.0316253Z documenso-dev-gotenberg                                   latest          1.36GB
+2026-11-19T21:57:36.0317641Z redis                                                     8-alpine        120MB
+2026-11-19T21:57:36.0318282Z redis                                                     alpine          120MB
+2026-11-19T21:57:36.0318829Z redis                                                     latest          146MB
+2026-11-19T21:57:36.0319392Z postgres                                                  15              445MB
+2026-11-19T21:57:36.0320094Z langwatch/langevals                                       latest          2.08GB
+2026-11-19T21:57:36.0320693Z mysql                                                     9.7             931MB
+2026-11-19T21:57:36.0321377Z clickhouse/clickhouse-server                              26.8.36.3       904MB
+2026-11-19T21:57:36.0322129Z ghcr.io/nextcloud/continuous-integration-shallow-server   latest          1.87GB
+2026-11-19T21:57:36.0322841Z inbucket/inbucket                                         latest          33.7MB
+2026-11-19T21:57:36.0323440Z mongo                                                     8.2             947MB
+2026-11-19T21:57:36.0324038Z mcr.microsoft.com/playwright                              v1.59.1-noble   2.41GB
+2026-11-19T21:57:36.0324691Z testcontainers/ryuk                                       0.14.0          2.4MB
+2026-11-19T21:57:36.0325313Z langwatch/opensearch-lite                                 latest          1.45GB
+2026-11-19T21:57:36.0722940Z Stopping docker service...
+2026-11-19T21:57:38.1909323Z Syncing filesystem...
+2026-11-19T21:57:38.2785262Z Unmounting /var/lib/docker...
+2026-11-19T21:57:38.3432512Z Docker shutdown phases:
+2026-11-19T21:57:38.3433063Z   docker_stop      87ms
+2026-11-19T21:57:38.3433365Z   overlay_gc     1832ms
+2026-11-19T21:57:38.3433653Z   fstrim          196ms
+2026-11-19T21:57:38.3433922Z   sync             58ms
+2026-11-19T21:57:38.3434228Z   umount          132ms
+2026-11-19T21:57:38.3434530Z   total          2308ms
+2026-11-19T21:57:38.3653329Z Docker container hash mismatch - committing
+2026-11-19T21:57:38.4452742Z No active SSH sessions detected. Proceeding with shutdown immediately.
+2026-11-19T21:57:38.4519520Z Cleaning up orphan processes
+2026-11-19T21:57:38.5005844Z Terminate orphan process: pid (4296) (pnpm)
+2026-11-19T21:57:38.5039062Z Terminate orphan process: pid (4314) (sh)
+2026-11-19T21:57:38.5067636Z Terminate orphan process: pid (4315) (node-MainThread)
